@@ -246,7 +246,7 @@ int main(int argc, char* argv[])
 						printf("%s", zBigENC);
 						break;
 					default:
-						printf("0000000");
+						printf("00000000");
 						break;
 				}	
 				
