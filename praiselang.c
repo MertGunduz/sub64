@@ -20,26 +20,26 @@ int main(int argc, char* argv[])
 		char dBigENC[] = "midgard";
 		char eBigENC[] = "shaitan";
 		char fBigENC[] = "sekhmet";
-		char gBigENC[] = "abbadon";
+		char gBigENC[] = "abaddon";
 		char hBigENC[] = "alastor";
 		char iBigENC[] = "halphas";
 		char jBigENC[] = "incubus";
-		char kBigENC[] = "";
-		char lBigENC[] = "";
-		char mBigENC[] = "";
-		char nBigENC[] = "";
-		char oBigENC[] = "";
-		char pBigENC[] = "";
-		char qBigENC[] = "";
-		char rBigENC[] = "";
-		char sBigENC[] = "";
-		char tBigENC[] = "";
-		char uBigENC[] = "";
-		char vBigENC[] = "";
-		char wBigENC[] = "";
-		char xBigENC[] = "";
-		char yBigENC[] = "";
-		char zBigENC[] = "";
+		char kBigENC[] = "gramory";
+		char lBigENC[] = "krampus";
+		char mBigENC[] = "kukuduh";
+		char nBigENC[] = "leviath";
+		char oBigENC[] = "malphas";
+		char pBigENC[] = "maricha";
+		char qBigENC[] = "lucifer";
+		char rBigENC[] = "astarte";
+		char sBigENC[] = "olelbis";
+		char tBigENC[] = "mazdean";
+		char uBigENC[] = "apolyon";
+		char vBigENC[] = "ahriman";
+		char wBigENC[] = "metztli";
+		char xBigENC[] = "hiblish";
+		char yBigENC[] = "hecates";
+		char zBigENC[] = "korpuso";
 
 		// Lower Characters (Encryption System)
 		char aENC[] = "abraham";
@@ -97,6 +97,9 @@ int main(int argc, char* argv[])
 						break;
 					case 'c':
 						printf("%s", cENC);
+						break;
+					case 'd':
+						printf("%s", dENC);
 						break;
 					default:
 						printf("########");
