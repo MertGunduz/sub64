@@ -69,6 +69,9 @@ int main(int argc, char* argv[])
 		char yENC[] = "adalynn";
 		char zENC[] = "aldrich";
 
+		// Space & Numbers (Encryption System)
+		char spaceENC[] = "zachary";
+		
 		// UI Design
 		printf(" ██████╗ ██████╗  █████╗ ██╗███████╗███████╗██╗      █████╗ ███╗   ██╗ ██████╗  \n");
 		printf(" ██╔══██╗██╔══██╗██╔══██╗██║██╔════╝██╔════╝██║     ██╔══██╗████╗  ██║██╔════╝  \n");
@@ -245,6 +248,9 @@ int main(int argc, char* argv[])
 					case 'Z':
 						printf("%s", zBigENC);
 						break;
+					case ' ':
+						printf("%s", spaceENC);
+						break;
 					default:
 						printf("00000000");
 						break;
@@ -257,9 +263,7 @@ int main(int argc, char* argv[])
 		}
 		else if (strcmp(processType, "-d") == 0)
 		{
-			// |-----------------|
-			// | DECRYPTION MENU |
-			// |-----------------|
+						
 		}
 	}
 	else if (argc == 2)
