@@ -167,11 +167,90 @@ int main(int argc, char* argv[])
 					case 'z':
 						printf("%s", zENC);
 						break;
+					case 'A': 
+						printf("%s", aBigENC);
+						break;
+					case 'B':
+						printf("%s", bBigENC);
+						break;
+					case 'C':
+						printf("%s", cBigENC);
+						break;
+					case 'D':
+						printf("%s", dBigENC);
+						break;
+					case 'E':
+						printf("%s", eBigENC);
+						break;
+					case 'F':
+						printf("%s", fBigENC);
+						break;
+					case 'G':
+						printf("%s", gBigENC);
+						break;
+					case 'H':
+						printf("%s", hBigENC);
+						break;
+					case 'I':
+						printf("%s", iBigENC);
+						break;
+					case 'J':
+						printf("%s", jBigENC);
+						break;
+					case 'K':
+						printf("%s", kBigENC);
+						break;
+					case 'L':
+						printf("%s", lBigENC);
+						break;
+					case 'M':
+						printf("%s", mBigENC);
+						break;
+					case 'N':
+						printf("%s", nBigENC);
+						break;
+					case 'O':
+						printf("%s", oBigENC);
+						break;
+					case 'P':
+						printf("%s", pBigENC);
+						break;
+					case 'Q':
+						printf("%s", qBigENC);
+						break;
+					case 'R':
+						printf("%s", rBigENC);
+						break;
+					case 'S':
+						printf("%s", sBigENC);
+						break;
+					case 'T':
+						printf("%s", tBigENC);
+						break;
+					case 'U':
+						printf("%s", uBigENC);
+						break;
+					case 'V':
+						printf("%s", vBigENC);
+						break;
+					case 'W':
+						printf("%s", wBigENC);
+						break;
+					case 'X':
+						printf("%s", xBigENC);
+						break;
+					case 'Y':
+						printf("%s", yBigENC);
+						break;
+					case 'Z':
+						printf("%s", zBigENC);
+						break;
 					default:
+						printf("0000000");
 						break;
 				}	
 				
-				textArray++;		
+				textArray++;
 			}
 			printf("\n");
 		}
