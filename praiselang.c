@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
 		printf("█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗\n");
 		printf("╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝\n\n");
 	
-		if (strcmp(processType, "Encrypt") == 0)
+		if (strcmp(processType, "-e") == 0)
 		{	
 			printf("Encrypted Text --> ");	
 			for(int i = 0; i < textLength; i++)
@@ -101,8 +101,73 @@ int main(int argc, char* argv[])
 					case 'd':
 						printf("%s", dENC);
 						break;
+					case 'e':
+						printf("%s", eENC);
+						break;
+					case 'f':
+						printf("%s", fENC);
+						break;
+					case 'g':
+						printf("%s", gENC);
+						break;
+					case 'h':
+						printf("%s", hENC);
+						break;
+					case 'i':
+						printf("%s", iENC);
+						break;
+					case 'j':
+						printf("%s", jENC);
+						break;
+					case 'k':
+						printf("%s", kENC);
+						break;
+					case 'l':
+						printf("%s", lENC);
+						break;
+					case 'm':
+						printf("%s", mENC);
+						break;
+					case 'n':
+						printf("%s", nENC);
+						break;
+					case 'o':
+						printf("%s", oENC);
+						break;
+					case 'p':
+						printf("%s", pENC);
+						break;
+					case 'q':
+						printf("%s", qENC);
+						break;
+					case 'r':
+						printf("%s", rENC);
+						break;
+					case 's':
+						printf("%s", sENC);
+						break;
+					case 't':
+						printf("%s", tENC);
+						break;
+					case 'u':
+						printf("%s", uENC);
+						break;
+					case 'v':
+						printf("%s", vENC);
+						break;
+					case 'w':
+						printf("%s", wENC);
+						break;
+					case 'x':
+						printf("%s", xENC);
+						break;
+					case 'y': 
+						printf("%s", yENC);
+						break;
+					case 'z':
+						printf("%s", zENC);
+						break;
 					default:
-						printf("########");
 						break;
 				}	
 				
@@ -110,9 +175,9 @@ int main(int argc, char* argv[])
 			}
 			printf("\n");
 		}
-		else if (strcmp(processType, "Decrypt") == 0)
+		else if (strcmp(processType, "-d") == 0)
 		{
-		
+			
 		}
 	}
 	else 
@@ -121,5 +186,4 @@ int main(int argc, char* argv[])
 		printf("| Please Enter CLI Arguments |\n");
 		printf("|----------------------------|\n");
 	}
-
 }
