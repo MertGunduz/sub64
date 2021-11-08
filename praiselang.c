@@ -81,7 +81,8 @@ int main(int argc, char* argv[])
 		printf("╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝\n\n");
 	
 		if (strcmp(processType, "Encrypt") == 0)
-		{		
+		{	
+			printf("Encrypted Text --> ");	
 			for(int i = 0; i < textLength; i++)
 			{
 				char analysisCharacter = *textArray;
@@ -92,6 +93,11 @@ int main(int argc, char* argv[])
 						printf("%s", aENC);
 						break;
 					case 'b':
+						printf("%s", bENC);
+						break;
+					case 'c':
+						printf("%s", cENC);
+						break;
 					default:
 						printf("########");
 						break;
@@ -99,6 +105,7 @@ int main(int argc, char* argv[])
 				
 				textArray++;		
 			}
+			printf("\n");
 		}
 		else if (strcmp(processType, "Decrypt") == 0)
 		{
