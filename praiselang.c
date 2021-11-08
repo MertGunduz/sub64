@@ -252,12 +252,19 @@ int main(int argc, char* argv[])
 				
 				textArray++;
 			}
+			
 			printf("\n");
 		}
 		else if (strcmp(processType, "-d") == 0)
 		{
-			
+			// |-----------------|
+			// | DECRYPTION MENU |
+			// |-----------------|
 		}
+	}
+	else if (argc == 2)
+	{
+		printf("Text Length --> %d\n", strlen(argv[1]));
 	}
 	else 
 	{
