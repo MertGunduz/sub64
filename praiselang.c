@@ -82,6 +82,8 @@ int main(int argc, char* argv[])
 		char egtENC[] = "lutican";
 		char nneENC[] = "baroque";
 		
+		// Characters (Encryption System)
+		
 		// Analysis
 		char word[9];
 		int repeater = 0;
@@ -101,6 +103,7 @@ int main(int argc, char* argv[])
 		if (strcmp(processType, "-e") == 0)
 		{	
 			printf("Encrypted Text --> ");	
+			
 			for(int i = 0; i < textLength; i++)
 			{
 				char analysisCharacter = *textArray;
@@ -308,6 +311,8 @@ int main(int argc, char* argv[])
 		}
 		else if (strcmp(processType, "-d") == 0)
 		{
+			printf("Encrypted Text --> ");
+			
 			for (int i = 0; i < textLength; i++)
 			{
 				word[repeater] = textArray[i];
@@ -422,6 +427,154 @@ int main(int argc, char* argv[])
 					{
 						printf("z");
 					}
+					else if (strcmp(word, aBigENC) == 0)
+					{
+						printf("A");
+					}
+					else if (strcmp(word, bBigENC) == 0)
+					{
+						printf("B");
+					}
+					else if (strcmp(word, cBigENC) == 0)
+					{
+						printf("C");
+					}
+					else if (strcmp(word, dBigENC) == 0)
+					{
+						printf("D");
+					}
+					else if (strcmp(word, eBigENC) == 0)
+					{
+						printf("E");
+					}
+					else if (strcmp(word, fBigENC) == 0)
+					{
+						printf("F");
+					}
+					else if (strcmp(word, gBigENC) == 0)
+					{
+						printf("G");
+					}
+					else if (strcmp(word, hBigENC) == 0)
+					{
+						printf("H");
+					}
+					else if (strcmp(word, iBigENC) == 0)
+					{
+						printf("I");
+					}
+					else if (strcmp(word, jBigENC) == 0)
+					{
+						printf("J");
+					}
+					else if (strcmp(word, kBigENC) == 0)
+					{
+						printf("K");
+					}
+					else if (strcmp(word, lBigENC) == 0)
+					{
+						printf("L");
+					}
+					else if (strcmp(word, mBigENC) == 0)
+					{
+						printf("M");
+					}
+					else if (strcmp(word, nBigENC) == 0)
+					{
+						printf("N");
+					}
+					else if (strcmp(word, oBigENC) == 0)
+					{
+						printf("O");
+					}
+					else if (strcmp(word, pBigENC) == 0)
+					{
+						printf("P");
+					}
+					else if (strcmp(word, qBigENC) == 0)
+					{
+						printf("Q");
+					}
+					else if (strcmp(word, rBigENC) == 0)
+					{
+						printf("R");
+					}
+					else if (strcmp(word, sBigENC) == 0)
+					{
+						printf("S");
+					}
+					else if (strcmp(word, tBigENC) == 0)
+					{
+						printf("T");
+					}
+					else if (strcmp(word, uBigENC) == 0)
+					{
+						printf("U");
+					}
+					else if (strcmp(word, vBigENC) == 0)
+					{
+						printf("V");
+					}
+					else if (strcmp(word, wBigENC) == 0)
+					{
+						printf("W");
+					}
+					else if (strcmp(word, xBigENC) == 0)
+					{
+						printf("X");
+					}
+					else if (strcmp(word, yBigENC) == 0)
+					{
+						printf("Y");
+					}
+					else if (strcmp(word, zBigENC) == 0)
+					{
+						printf("Z");
+					}
+					else if (strcmp(word, spcENC) == 0)
+					{
+						printf(" ");
+					}
+					else if (strcmp(word, zroENC) == 0)
+					{
+						printf("0");
+					}
+					else if (strcmp(word, oneENC) == 0)
+					{
+						printf("1");
+					}
+					else if (strcmp(word, twoENC) == 0)
+					{
+						printf("2");
+					}
+					else if (strcmp(word, thrENC) == 0)
+					{
+						printf("3");
+					}
+					else if (strcmp(word, furENC) == 0)
+					{
+						printf("4");
+					}
+					else if (strcmp(word, fveENC) == 0)
+					{
+						printf("5");
+					}
+					else if (strcmp(word, sixENC) == 0)
+					{
+						printf("6");
+					}
+					else if (strcmp(word, svnENC) == 0)
+					{
+						printf("7");
+					}
+					else if (strcmp(word, egtENC) == 0)
+					{
+						printf("8");
+					}
+					else if (strcmp(word, nneENC) == 0)
+					{
+						printf("9");
+					}
 					
 					word[0] = '0';
 					word[1] = '0';
@@ -438,6 +591,7 @@ int main(int argc, char* argv[])
 					repeater++;
 				}
 			}
+			printf("\n");
 		}
 	}
 	else if (argc == 2)
