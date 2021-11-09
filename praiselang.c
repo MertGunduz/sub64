@@ -263,6 +263,36 @@ int main(int argc, char* argv[])
 					case 'Z':
 						printf("%s", zBigENC);
 						break;
+					case '0':
+						printf("%s", zroENC);
+						break;
+					case '1':
+						printf("%s", oneENC);
+						break;
+					case '2':
+						printf("%s", twoENC);
+						break;
+					case '3':
+						printf("%s", thrENC);
+						break;
+					case '4':
+						printf("%s", furENC);
+						break;
+					case '5':
+						printf("%s", fveENC);
+						break;
+					case '6':
+						printf("%s", sixENC);
+						break;
+					case '7':
+						printf("%s", svnENC);
+						break;
+					case '8':
+						printf("%s", egtENC);
+						break;
+					case '9':
+						printf("%s", nneENC);
+						break;
 					case ' ':
 						printf("%s", spcENC);
 						break;
