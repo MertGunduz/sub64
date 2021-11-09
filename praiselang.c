@@ -323,7 +323,7 @@ int main(int argc, char* argv[])
 		}
 		else if (strcmp(processType, "-d") == 0)
 		{
-			printf("Encrypted Text --> ");
+			printf("Decrypted Text --> ");
 			
 			for (int i = 0; i < textLength; i++)
 			{
