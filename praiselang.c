@@ -318,6 +318,110 @@ int main(int argc, char* argv[])
 					// |--------------------------|
 					// | SWTICH DATA READ & WRITE |
 					// |--------------------------|
+					if (strcmp(word, aENC) == 0)
+					{
+						printf("a");
+					}
+					else if (strcmp(word, bENC) == 0)
+					{
+						printf("b");
+					}
+					else if (strcmp(word, cENC) == 0)
+					{
+						printf("c");
+					}
+					else if (strcmp(word, dENC) == 0)
+					{
+						printf("d");
+					}
+					else if (strcmp(word, eENC) == 0)
+					{
+						printf("e");
+					}
+					else if (strcmp(word, fENC) == 0)
+					{
+						printf("f");
+					}
+					else if (strcmp(word, gENC) == 0)
+					{
+						printf("g");
+					}
+					else if (strcmp(word, hENC) == 0)
+					{
+						printf("h");
+					}
+					else if (strcmp(word, iENC) == 0)
+					{
+						printf("i");
+					}
+					else if (strcmp(word, jENC) == 0)
+					{
+						printf("j");
+					}
+					else if (strcmp(word, kENC) == 0)
+					{
+						printf("k");
+					}
+					else if (strcmp(word, lENC) == 0)
+					{
+						printf("l");
+					}
+					else if (strcmp(word, mENC) == 0)
+					{
+						printf("m");
+					}
+					else if (strcmp(word, nENC) == 0)
+					{
+						printf("n");
+					}
+					else if (strcmp(word, oENC) == 0)
+					{
+						printf("o");
+					}
+					else if (strcmp(word, pENC) == 0)
+					{
+						printf("p");
+					}
+					else if (strcmp(word, qENC) == 0)
+					{
+						printf("q");
+					}
+					else if (strcmp(word, rENC) == 0)
+					{
+						printf("r");
+					}
+					else if (strcmp(word, sENC) == 0)
+					{
+						printf("s");
+					}
+					else if (strcmp(word, tENC) == 0)
+					{
+						printf("t");
+					}
+					else if (strcmp(word, uENC) == 0)
+					{
+						printf("u");
+					}
+					else if (strcmp(word, vENC) == 0)
+					{
+						printf("v");
+					}
+					else if (strcmp(word, wENC) == 0)
+					{
+						printf("w");
+					}
+					else if (strcmp(word, xENC) == 0)
+					{
+						printf("x");
+					}
+					else if (strcmp(word, yENC) == 0)
+					{
+						printf("y");
+					}
+					else if (strcmp(word, zENC) == 0)
+					{
+						printf("z");
+					}
 					
 					word[0] = '0';
 					word[1] = '0';
