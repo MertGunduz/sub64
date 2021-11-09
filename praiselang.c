@@ -83,6 +83,7 @@ int main(int argc, char* argv[])
 		char nneENC[] = "baroque";
 		
 		// Characters (Encryption System)
+		char apostrophe
 		
 		// Analysis
 		char word[9];
@@ -320,9 +321,6 @@ int main(int argc, char* argv[])
 				
 				if (strlen(word) == 7 && word[0] != '0' && word[1] != '0' && word[2] != '0' && word[3] != '0' && word[4] != '0' && word[5] != '0' && word[6] != '0')
 				{
-					// |--------------------------|
-					// | SWTICH DATA READ & WRITE |
-					// |--------------------------|
 					if (strcmp(word, aENC) == 0)
 					{
 						printf("a");
