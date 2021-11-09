@@ -83,7 +83,7 @@ int main(int argc, char* argv[])
 		char nneENC[] = "baroque";
 		
 		// Characters (Encryption System)
-		char apostrophe
+		
 		
 		// Analysis
 		char word[9];
@@ -594,7 +594,30 @@ int main(int argc, char* argv[])
 	}
 	else if (argc == 2)
 	{
-		printf("Text Length --> %d\n", strlen(argv[1]));
+		if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "?") == 0)
+		{
+			printf("|------------------|\n");
+			printf("| PRAISELANG GUIDE |\n");
+			printf("|------------------|\n\n");
+			
+			printf("1) TAKE LENGTH COMMAND\n\n");
+			printf("How To Use --> ./praiselang.out <\"Text\">\n");
+			printf("Example --> ./praiselang.out \"Hello World!\"\n\n");
+			
+			printf("2) ENCRYPT TEXT COMMAND\n\n");
+			printf("Note: Take the length of the text you want to encrypt before the encryption!\n");
+			printf("How To Use --> ./praiselang.out <Text Length> <\"Text\"> -e\n");
+			printf("Example --> ./praiselang.out 27 \"C is a programming language\" -e\n\n");
+			
+			printf("3) DECRYPT TEXT COMMAND\n\n");
+			printf("Note: Take the length of the text you want to decrypt before the decryption!\n");
+			printf("How To Use --> ./praiselang.out <Text Length> <\"Text\"> -d\n");
+			printf("Example --> ./praiselang.out 21 \"astartechemoshkukuduh\" -d\n");
+		}
+		else 
+		{
+			printf("Text Length --> %d\n", strlen(argv[1]));
+		}
 	}
 	else 
 	{
