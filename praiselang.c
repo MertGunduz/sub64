@@ -70,20 +70,27 @@ int main(int argc, char* argv[])
 		char zENC[] = "aldrich";
 
 		// Space & Numbers (Encryption System)
-		char spcENC[] = "zachary";
-		char zroENC[] = "jehovah";
-		char oneENC[] = "shaddai";
-		char twoENC[] = "buddhas";
-		char thrENC[] = "oktavie";
-		char furENC[] = "exploit";
-		char fveENC[] = "praiser";
-		char sixENC[] = "prelude";
-		char svnENC[] = "theorbo";
-		char egtENC[] = "lutican";
-		char nneENC[] = "baroque";
+		char spcENC[] = "zachary"; // Space
+		char zroENC[] = "jehovah"; // 0 Char
+		char oneENC[] = "shaddai"; // 1 Char
+		char twoENC[] = "buddhas"; // 2 Char
+		char thrENC[] = "oktavie"; // 3 Char
+		char furENC[] = "exploit"; // 4 Char
+		char fveENC[] = "praiser"; // 5 Char
+		char sixENC[] = "prelude"; // 6 Char
+		char svnENC[] = "theorbo"; // 7 Char
+		char egtENC[] = "lutican"; // 8 Char
+		char nneENC[] = "vihuela"; // 9 Char
 		
 		// Characters (Encryption System)
-		
+		char apsENC[] = "artemis"; // Apostrophe (')
+		char dotENC[] = "firdaws"; // Dot (.)
+		char cmmENC[] = "arcduke"; // Comma (,)
+		char colENC[] = "mokosha"; // Colon (:)
+		char sclENC[] = "nirvana"; // Semicolon (;)
+		char qstENC[] = "galilee"; // Question Mark (?)
+		char excENC[] = "edicule"; // Exclamation Mark (!)
+		char qtsENC[] = "baptist"; // Quoatation Mark (")
 		
 		// Analysis
 		char word[9];
