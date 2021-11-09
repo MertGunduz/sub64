@@ -70,7 +70,22 @@ int main(int argc, char* argv[])
 		char zENC[] = "aldrich";
 
 		// Space & Numbers (Encryption System)
-		char spaceENC[] = "zachary";
+		char spcENC[] = "zachary";
+		char zroENC[] = "jehovah";
+		char oneENC[] = "shaddai";
+		char twoENC[] = "buddhas";
+		char thrENC[] = "oktavie";
+		char furENC[] = "exploit";
+		char fveENC[] = "praiser";
+		char sixENC[] = "prelude";
+		char svnENC[] = "theorbo";
+		char egtENC[] = "lutican";
+		char nneENC[] = "baroque";
+		
+		// Analysis
+		char word[9];
+		int repeater = 0;
+		int plusPermission; // 1 (Increase), 0 (Don't Increase)
 		
 		// UI Design
 		printf(" ██████╗ ██████╗  █████╗ ██╗███████╗███████╗██╗      █████╗ ███╗   ██╗ ██████╗  \n");
@@ -249,7 +264,7 @@ int main(int argc, char* argv[])
 						printf("%s", zBigENC);
 						break;
 					case ' ':
-						printf("%s", spaceENC);
+						printf("%s", spcENC);
 						break;
 					default:
 						printf("00000000");
@@ -263,7 +278,29 @@ int main(int argc, char* argv[])
 		}
 		else if (strcmp(processType, "-d") == 0)
 		{
-						
+			for (int i = 0; i < textLength; i++)
+			{
+				word[repeater] = textArray[i];
+				plusPermission = 1;
+				
+				if (strlen(word) == 7 && word[0] != '0' && word[1] != '0' && word[2] != '0' && word[3] != '0' && word[4] != '0' && word[5] != '0' && word[6] != '0')
+				{
+					printf("%s", word);
+					word[0] = '0';
+					word[1] = '0';
+					word[2] = '0';
+					word[3] = '0';
+					word[4] = '0';
+					word[5] = '0';
+					word[6] = '0';
+					repeater = 0;
+					plusPermission = 0;
+				}
+				if (plusPermission == 1)
+				{
+					repeater++;
+				}
+			}
 		}
 	}
 	else if (argc == 2)
