@@ -83,14 +83,9 @@ int main(int argc, char* argv[])
 		char nneENC[] = "vihuela"; // 9 Char
 		
 		// Characters (Encryption System)
-		char apsENC[] = "artemis"; // Apostrophe (')
 		char dotENC[] = "firdaws"; // Dot (.)
 		char cmmENC[] = "arcduke"; // Comma (,)
-		char colENC[] = "mokosha"; // Colon (:)
-		char sclENC[] = "nirvana"; // Semicolon (;)
-		char qstENC[] = "galilee"; // Question Mark (?)
 		char excENC[] = "edicule"; // Exclamation Mark (!)
-		char qtsENC[] = "baptist"; // Quoatation Mark (")
 		
 		// Analysis
 		char word[9];
@@ -306,6 +301,15 @@ int main(int argc, char* argv[])
 						break;
 					case ' ':
 						printf("%s", spcENC);
+						break;
+					case '.':
+						printf("%s", dotENC);
+						break;
+					case ',':
+						printf("%s", cmmENC);
+						break;
+					case '!':
+						printf("%s", excENC);
 						break;
 					default:
 						printf("00000000");
@@ -579,6 +583,18 @@ int main(int argc, char* argv[])
 					else if (strcmp(word, nneENC) == 0)
 					{
 						printf("9");
+					}
+					else if (strcmp(word, dotENC) == 0)
+					{
+						printf(".");
+					}
+					else if (strcmp(word, cmmENC) == 0)
+					{
+						printf(",");
+					}
+					else if (strcmp(word, excENC) == 0)
+					{
+						printf("!");
 					}
 					
 					word[0] = '0';
