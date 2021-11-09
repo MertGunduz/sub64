@@ -269,7 +269,7 @@ int main(int argc, char* argv[])
 					default:
 						printf("00000000");
 						break;
-				}	
+				}			
 				
 				textArray++;
 			}
@@ -285,7 +285,10 @@ int main(int argc, char* argv[])
 				
 				if (strlen(word) == 7 && word[0] != '0' && word[1] != '0' && word[2] != '0' && word[3] != '0' && word[4] != '0' && word[5] != '0' && word[6] != '0')
 				{
-					printf("%s", word);
+					// |--------------------------|
+					// | SWTICH DATA READ & WRITE |
+					// |--------------------------|
+					
 					word[0] = '0';
 					word[1] = '0';
 					word[2] = '0';
