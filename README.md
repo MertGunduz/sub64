@@ -16,7 +16,7 @@
 
 > <em>Example:</em> <code>./praiselang.out **_"Hello World!"_**</code>
 
-    OUTPUT: 12
+    EXAMPLE OUTPUT: 12
 
 <br>
 
@@ -28,7 +28,7 @@
 
 > <em>Example:</em> <code>./praiselang.out **_27 "C is a programming language" -e_**</code>
   
-    OUTPUT: mastemazacharyrichardbridgetzacharyabrahamzacharyabigailjulianabethanymicaiahjulianaabrahamtabithatabitharichardroxannemicaiahzacharyallegraabrahamroxannemicaiahaayushiabrahammicaiahgabriel
+    EXAMPLE OUTPUT: mastemazacharyrichardbridgetzacharyabrahamzacharyabigailjulianabethanymicaiahjulianaabrahamtabithatabitharichardroxannemicaiahzacharyallegraabrahamroxannemicaiahaayushiabrahammicaiahgabriel
 
 <br>
 
@@ -40,7 +40,7 @@
 
 > <em>Example:</em> <code>./praiselang.out **_21 "astartechemoshkukuduh" -d_**</code>
 
-    OUTPUT: RAM
+    EXAMPLE OUTPUT: RAM
     
 <br>
     
