@@ -21,6 +21,7 @@ bool argVerify(int argc, char *firstArgument);
 /* MENU FUNCTIONS */
 void githubMenu();
 void versionMenu();
+void helpMenu();
 
 /* MESSAGE FUNCTIONS */
 void wrongArgumentsMessage();

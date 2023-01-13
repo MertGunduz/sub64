@@ -1,1 +1,1 @@
-add_library(praiselanglib STATIC argVerify.c wrongArgumentsMessage.c secondArgumentMissingMessage.c badArgcMessage.c githubMenu.c versionMenu.c)
+add_library(praiselanglib STATIC argVerify.c wrongArgumentsMessage.c secondArgumentMissingMessage.c badArgcMessage.c githubMenu.c versionMenu.c helpMenu.c)

@@ -17,9 +17,11 @@ digraph "src/base64/base64.h"
   Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="src/praiselanglib/github\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d5a/githubMenu_8c.html",tooltip="prints github source code related information"];
   Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node8 [label="src/praiselanglib/helpMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d4d/helpMenu_8c.html",tooltip="prints a help menu for praiselang"];
   Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="src/praiselanglib/version\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d5d/versionMenu_8c.html",tooltip="prints praiselang version related information"];
+  Node9 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
   Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node10 [label="src/praiselanglib/version\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d5d/versionMenu_8c.html",tooltip="prints praiselang version related information"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
 }
