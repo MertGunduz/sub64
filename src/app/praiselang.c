@@ -25,7 +25,7 @@ void main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0)
         {
-            fprintf(stdout, "version menu");
+            versionMenu();
         }
         else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
         {

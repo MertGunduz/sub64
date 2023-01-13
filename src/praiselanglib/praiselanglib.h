@@ -15,11 +15,14 @@
 #include "stdbool.h"
 #include "../base64/base64.h"
 
-/* FUNCTIONS */
+/* CONTROL FUNCTIONS */
 bool argVerify(int argc, char *firstArgument);
+
+/* MENU FUNCTIONS */
+void githubMenu();
+void versionMenu();
 
 /* MESSAGE FUNCTIONS */
 void wrongArgumentsMessage();
 void secondArgumentMissingMessage();
 void badArgcMessage(int argc);
-void githubMenu();

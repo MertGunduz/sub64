@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>praiselang: src/praiselanglib/wrongArgumentsMessage.c File Reference</title>
+<title>praiselang: src/praiselanglib/versionMenu.c Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -67,60 +67,24 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">wrongArgumentsMessage.c File Reference</div>  </div>
+<div class="title">versionMenu.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>prints information about wrong arguments  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d5/d44/praiselanglib_8h_source.html">praiselanglib.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for wrongArgumentsMessage.c:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d7/d7d/wrongArgumentsMessage_8c__incl.png" border="0" usemap="#asrc_2praiselanglib_2wrongArgumentsMessage_8c" alt=""/></div>
-</div>
-</div>
-<p><a href="../../dd/d10/wrongArgumentsMessage_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a17dd96e3e5f4d48cc1876b97f619868f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d10/wrongArgumentsMessage_8c.html#a17dd96e3e5f4d48cc1876b97f619868f">wrongArgumentsMessage</a> ()</td></tr>
-<tr class="memdesc:a17dd96e3e5f4d48cc1876b97f619868f"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints information about wrong arguments  <a href="../../dd/d10/wrongArgumentsMessage_8c.html#a17dd96e3e5f4d48cc1876b97f619868f">More...</a><br /></td></tr>
-<tr class="separator:a17dd96e3e5f4d48cc1876b97f619868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>prints information about wrong arguments </p>
-<dl class="section author"><dt>Author</dt><dd>Mehmet Mert Gunduz</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>13/01/2023 </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000010">Bug:</a></b></dt><dd>no known bugs </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="../../dd/d10/wrongArgumentsMessage_8c_source.html">wrongArgumentsMessage.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a17dd96e3e5f4d48cc1876b97f619868f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17dd96e3e5f4d48cc1876b97f619868f">&#9670;&nbsp;</a></span>wrongArgumentsMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wrongArgumentsMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>prints information about wrong arguments </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d10/wrongArgumentsMessage_8c_source.html#l00015">15</a> of file <a class="el" href="../../dd/d10/wrongArgumentsMessage_8c_source.html">wrongArgumentsMessage.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<a href="../../de/d5d/versionMenu_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d44/praiselanglib_8h.html">praiselanglib.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d5/d44/praiselanglib_8h.html#a1e190473bc69c98dee011e172712057e">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d5d/versionMenu_8c.html#a1e190473bc69c98dee011e172712057e">versionMenu</a>()</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;praiselang version 1.0.0\n&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;license GPL 3.0: GNU GPL version 3 https://gnu.org/licenses/gpl.html\n&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;this is a free software: you are free to change and redistribute it.\n&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;there is no warranty, to the extent permitted by law.\n\n&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;developed by Mehmet Mert Gunduz.\n&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="apraiselanglib_8h_html"><div class="ttname"><a href="../../d5/d44/praiselanglib_8h.html">praiselanglib.h</a></div></div>
+<div class="ttc" id="aversionMenu_8c_html_a1e190473bc69c98dee011e172712057e"><div class="ttname"><a href="../../de/d5d/versionMenu_8c.html#a1e190473bc69c98dee011e172712057e">versionMenu</a></div><div class="ttdeci">void versionMenu()</div><div class="ttdoc">prints praiselang version related information</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d5d/versionMenu_8c_source.html#l00015">versionMenu.c:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
