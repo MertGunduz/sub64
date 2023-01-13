@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['secondargumentmissingmessage_18',['secondArgumentMissingMessage',['../d5/d44/praiselanglib_8h.html#af55d67ebf5deeb8f5f7bbe3a43605bcb',1,'secondArgumentMissingMessage():&#160;secondArgumentMissingMessage.c'],['../da/d9f/secondArgumentMissingMessage_8c.html#af55d67ebf5deeb8f5f7bbe3a43605bcb',1,'secondArgumentMissingMessage():&#160;secondArgumentMissingMessage.c']]],
-  ['secondargumentmissingmessage_2ec_19',['secondArgumentMissingMessage.c',['../da/d9f/secondArgumentMissingMessage_8c.html',1,'']]]
+  ['praiselang_2ec_18',['praiselang.c',['../d8/d17/praiselang_8c.html',1,'']]],
+  ['praiselanglib_2eh_19',['praiselanglib.h',['../d5/d44/praiselanglib_8h.html',1,'']]]
 ];

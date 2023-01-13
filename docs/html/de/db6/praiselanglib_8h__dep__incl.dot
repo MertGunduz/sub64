@@ -11,7 +11,9 @@ digraph "src/praiselanglib/praiselanglib.h"
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="src/praiselanglib/badArgc\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d9e/badArgcMessage_8c.html",tooltip="prints information about wrong arguments"];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node5 [label="src/praiselanglib/github\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d5a/githubMenu_8c.html",tooltip="prints github source code related information"];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node6 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
 }

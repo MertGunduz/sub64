@@ -1,7 +1,7 @@
 /**
  * @file praiselanhlib.h
  * 
- * @brief the header fikle for praiselang
+ * @brief the header file for praiselang
  * 
  * @author Mehmet Mert Gunduz
  * 
@@ -22,3 +22,4 @@ bool argVerify(int argc, char *firstArgument);
 void wrongArgumentsMessage();
 void secondArgumentMissingMessage();
 void badArgcMessage(int argc);
+void githubMenu();

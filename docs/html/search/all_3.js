@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_15',['main',['../d8/d17/praiselang_8c.html#a91a3bbcc7eb26e8695255b2795d6e46f',1,'praiselang.c']]]
+  ['githubmenu_15',['githubMenu',['../dc/d5a/githubMenu_8c.html#a5c9fafe89296995ae266364afad7b757',1,'githubMenu():&#160;githubMenu.c'],['../d5/d44/praiselanglib_8h.html#a5c9fafe89296995ae266364afad7b757',1,'githubMenu():&#160;githubMenu.c']]],
+  ['githubmenu_2ec_16',['githubMenu.c',['../dc/d5a/githubMenu_8c.html',1,'']]]
 ];

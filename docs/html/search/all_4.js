@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['praiselang_2ec_16',['praiselang.c',['../d8/d17/praiselang_8c.html',1,'']]],
-  ['praiselanglib_2eh_17',['praiselanglib.h',['../d5/d44/praiselanglib_8h.html',1,'']]]
+  ['main_17',['main',['../d8/d17/praiselang_8c.html#a91a3bbcc7eb26e8695255b2795d6e46f',1,'praiselang.c']]]
 ];
