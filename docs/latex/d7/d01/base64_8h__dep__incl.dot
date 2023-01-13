@@ -1,0 +1,21 @@
+digraph "src/base64/base64.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/base64/base64.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="base64 encryption/decryption library (code by Wei Zhicheng)"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="src/base64/base64.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d36/base64_8c.html",tooltip="base64 encryption/decryption functions file (code by Wei Zhicheng)"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="src/praiselanglib/praiselanglib.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d44/praiselanglib_8h.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="src/app/praiselang.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d17/praiselang_8c.html",tooltip="the main application file of praiselang"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="src/praiselanglib/argVerify.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d2a/argVerify_8c.html",tooltip="tests the arguments, argument count and returns true (bool) if prompted arguments are true"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="src/praiselanglib/badArgc\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d9e/badArgcMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
+}

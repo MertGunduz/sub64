@@ -1,4 +1,15 @@
-/* This is a public domain base64 implementation written by WEI Zhicheng. */
+/**
+ * @file base64.c
+ * 
+ * @brief base64 encryption/decryption functions file (code by Wei Zhicheng)
+ * 
+ * @author Mehmet Mert Gunduz
+ * 
+ * @date 13/01/2023
+ * @bug no known bugs
+*/
+
+/* This is a public domain base64 implementation written by Wei Zhicheng. */
 
 #include "base64.h"
 
@@ -69,8 +80,12 @@ static const unsigned char base64de[] = {
 	    49,  50,  51, 255, 255, 255, 255, 255
 };
 
-unsigned int
-base64_encode(const unsigned char *in, unsigned int inlen, char *out)
+/// @brief encodes the given string to base64
+/// @param in 
+/// @param inlen 
+/// @param out 
+/// @return j
+unsigned int base64_encode(const unsigned char *in, unsigned int inlen, char *out)
 {
 	int s;
 	unsigned int i;
@@ -118,8 +133,12 @@ base64_encode(const unsigned char *in, unsigned int inlen, char *out)
 	return j;
 }
 
-unsigned int
-base64_decode(const char *in, unsigned int inlen, unsigned char *out)
+/// @brief decodes the given string from base64 to normal format
+/// @param in 
+/// @param inlen 
+/// @param out 
+/// @return j
+unsigned int base64_decode(const char *in, unsigned int inlen, unsigned char *out)
 {
 	unsigned int i;
 	unsigned int j;

@@ -1,0 +1,114 @@
+\hypertarget{base64_8h}{}\doxysection{src/base64/base64.h File Reference}
+\label{base64_8h}\index{src/base64/base64.h@{src/base64/base64.h}}
+
+
+base64 encryption/decryption library (code by Wei Zhicheng)  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{base64_8h_abe0e111fab15cc824b9f49324dfa4d8f}{BASE64\+\_\+\+ENCODE\+\_\+\+OUT\+\_\+\+SIZE}}(s)~((unsigned int)((((s) + 2) / 3) $\ast$ 4 + 1))
+\item 
+\#define \mbox{\hyperlink{base64_8h_ad92de9c7638bdc487add29c096a637d6}{BASE64\+\_\+\+DECODE\+\_\+\+OUT\+\_\+\+SIZE}}(s)~((unsigned int)(((s) / 4) $\ast$ 3))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{base64_8h_a514f4adba027ad85f3e072c03ced130e}{base64\+\_\+encode}} (const unsigned char $\ast$in, unsigned int inlen, char $\ast$out)
+\begin{DoxyCompactList}\small\item\em encodes the given string to base64 \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{base64_8h_a83f7365633f396a13b8b2346afd75115}{base64\+\_\+decode}} (const char $\ast$in, unsigned int inlen, unsigned char $\ast$out)
+\begin{DoxyCompactList}\small\item\em decodes the given string from base64 to normal format \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+base64 encryption/decryption library (code by Wei Zhicheng) 
+
+\begin{DoxyAuthor}{Author}
+Mehmet Mert Gunduz
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+13/01/2023 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]no known bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{base64_8h_ad92de9c7638bdc487add29c096a637d6}\label{base64_8h_ad92de9c7638bdc487add29c096a637d6}} 
+\index{base64.h@{base64.h}!BASE64\_DECODE\_OUT\_SIZE@{BASE64\_DECODE\_OUT\_SIZE}}
+\index{BASE64\_DECODE\_OUT\_SIZE@{BASE64\_DECODE\_OUT\_SIZE}!base64.h@{base64.h}}
+\doxysubsubsection{\texorpdfstring{BASE64\_DECODE\_OUT\_SIZE}{BASE64\_DECODE\_OUT\_SIZE}}
+{\footnotesize\ttfamily \#define BASE64\+\_\+\+DECODE\+\_\+\+OUT\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~((unsigned int)(((s) / 4) $\ast$ 3))}
+
+
+
+Definition at line 16 of file base64.\+h.
+
+\mbox{\Hypertarget{base64_8h_abe0e111fab15cc824b9f49324dfa4d8f}\label{base64_8h_abe0e111fab15cc824b9f49324dfa4d8f}} 
+\index{base64.h@{base64.h}!BASE64\_ENCODE\_OUT\_SIZE@{BASE64\_ENCODE\_OUT\_SIZE}}
+\index{BASE64\_ENCODE\_OUT\_SIZE@{BASE64\_ENCODE\_OUT\_SIZE}!base64.h@{base64.h}}
+\doxysubsubsection{\texorpdfstring{BASE64\_ENCODE\_OUT\_SIZE}{BASE64\_ENCODE\_OUT\_SIZE}}
+{\footnotesize\ttfamily \#define BASE64\+\_\+\+ENCODE\+\_\+\+OUT\+\_\+\+SIZE(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~((unsigned int)((((s) + 2) / 3) $\ast$ 4 + 1))}
+
+
+
+Definition at line 15 of file base64.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{base64_8h_a83f7365633f396a13b8b2346afd75115}\label{base64_8h_a83f7365633f396a13b8b2346afd75115}} 
+\index{base64.h@{base64.h}!base64\_decode@{base64\_decode}}
+\index{base64\_decode@{base64\_decode}!base64.h@{base64.h}}
+\doxysubsubsection{\texorpdfstring{base64\_decode()}{base64\_decode()}}
+{\footnotesize\ttfamily unsigned int base64\+\_\+decode (\begin{DoxyParamCaption}\item[{const char $\ast$}]{in,  }\item[{unsigned int}]{inlen,  }\item[{unsigned char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+decodes the given string from base64 to normal format 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \\
+\hline
+{\em inlen} & \\
+\hline
+{\em out} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+j 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file base64.\+c.
+
+\mbox{\Hypertarget{base64_8h_a514f4adba027ad85f3e072c03ced130e}\label{base64_8h_a514f4adba027ad85f3e072c03ced130e}} 
+\index{base64.h@{base64.h}!base64\_encode@{base64\_encode}}
+\index{base64\_encode@{base64\_encode}!base64.h@{base64.h}}
+\doxysubsubsection{\texorpdfstring{base64\_encode()}{base64\_encode()}}
+{\footnotesize\ttfamily unsigned int base64\+\_\+encode (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{in,  }\item[{unsigned int}]{inlen,  }\item[{char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+encodes the given string to base64 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \\
+\hline
+{\em inlen} & \\
+\hline
+{\em out} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+j 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file base64.\+c.
+

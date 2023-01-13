@@ -1,0 +1,9 @@
+digraph "src/base64/base64.c"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/base64/base64.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="base64 encryption/decryption functions file (code by Wei Zhicheng)"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="base64.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d6f/base64_8h.html",tooltip="base64 encryption/decryption library (code by Wei Zhicheng)"];
+}
