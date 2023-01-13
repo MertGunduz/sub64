@@ -1,0 +1,2 @@
+add_subdirectory(praiselanglib)
+add_subdirectory(app)

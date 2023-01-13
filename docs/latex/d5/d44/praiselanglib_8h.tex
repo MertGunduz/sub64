@@ -1,0 +1,89 @@
+\hypertarget{praiselanglib_8h}{}\doxysection{src/praiselanglib/praiselanglib.h File Reference}
+\label{praiselanglib_8h}\index{src/praiselanglib/praiselanglib.h@{src/praiselanglib/praiselanglib.h}}
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdbool.\+h\char`\"{}}\newline
+Include dependency graph for praiselanglib.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{praiselanglib_8h_accd7a277a011046979c4c497d64e40ee}{arg\+Verify}} (int argc, char $\ast$first\+Argument)
+\begin{DoxyCompactList}\small\item\em checks the argument count and the arguments. returns true if everything is correct, if not returns false \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{praiselanglib_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{praiselanglib_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about missing second argument \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{praiselanglib_8h_af8d33a1b516f012b50b366f53496519b}{bad\+Argc\+Message}} (int argc)
+\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{praiselanglib_8h_accd7a277a011046979c4c497d64e40ee}\label{praiselanglib_8h_accd7a277a011046979c4c497d64e40ee}} 
+\index{praiselanglib.h@{praiselanglib.h}!argVerify@{argVerify}}
+\index{argVerify@{argVerify}!praiselanglib.h@{praiselanglib.h}}
+\doxysubsubsection{\texorpdfstring{argVerify()}{argVerify()}}
+{\footnotesize\ttfamily bool arg\+Verify (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{first\+Argument }\end{DoxyParamCaption})}
+
+
+
+checks the argument count and the arguments. returns true if everything is correct, if not returns false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em first\+Argument} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file arg\+Verify.\+c.
+
+\mbox{\Hypertarget{praiselanglib_8h_af8d33a1b516f012b50b366f53496519b}\label{praiselanglib_8h_af8d33a1b516f012b50b366f53496519b}} 
+\index{praiselanglib.h@{praiselanglib.h}!badArgcMessage@{badArgcMessage}}
+\index{badArgcMessage@{badArgcMessage}!praiselanglib.h@{praiselanglib.h}}
+\doxysubsubsection{\texorpdfstring{badArgcMessage()}{badArgcMessage()}}
+{\footnotesize\ttfamily void bad\+Argc\+Message (\begin{DoxyParamCaption}\item[{int}]{argc }\end{DoxyParamCaption})}
+
+
+
+prints information about wrong arguments 
+
+
+
+Definition at line 15 of file bad\+Argc\+Message.\+c.
+
+\mbox{\Hypertarget{praiselanglib_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}\label{praiselanglib_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}} 
+\index{praiselanglib.h@{praiselanglib.h}!secondArgumentMissingMessage@{secondArgumentMissingMessage}}
+\index{secondArgumentMissingMessage@{secondArgumentMissingMessage}!praiselanglib.h@{praiselanglib.h}}
+\doxysubsubsection{\texorpdfstring{secondArgumentMissingMessage()}{secondArgumentMissingMessage()}}
+{\footnotesize\ttfamily void second\+Argument\+Missing\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about missing second argument 
+
+
+
+Definition at line 15 of file second\+Argument\+Missing\+Message.\+c.
+
+\mbox{\Hypertarget{praiselanglib_8h_a17dd96e3e5f4d48cc1876b97f619868f}\label{praiselanglib_8h_a17dd96e3e5f4d48cc1876b97f619868f}} 
+\index{praiselanglib.h@{praiselanglib.h}!wrongArgumentsMessage@{wrongArgumentsMessage}}
+\index{wrongArgumentsMessage@{wrongArgumentsMessage}!praiselanglib.h@{praiselanglib.h}}
+\doxysubsubsection{\texorpdfstring{wrongArgumentsMessage()}{wrongArgumentsMessage()}}
+{\footnotesize\ttfamily void wrong\+Arguments\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about wrong arguments 
+
+
+
+Definition at line 15 of file wrong\+Arguments\+Message.\+c.
+

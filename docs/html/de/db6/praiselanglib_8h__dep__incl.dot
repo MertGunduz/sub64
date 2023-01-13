@@ -1,0 +1,17 @@
+digraph "src/praiselanglib/praiselanglib.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/praiselanglib/praiselanglib.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/app/praiselang.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d17/praiselang_8c.html",tooltip="the main application file of praiselang"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/praiselanglib/argVerify.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d2a/argVerify_8c.html",tooltip="tests the arguments, argument count and returns true (bool) if prompted arguments are true"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/praiselanglib/badArgc\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d9e/badArgcMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
+}
