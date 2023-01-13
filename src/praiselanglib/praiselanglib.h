@@ -13,6 +13,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "stdbool.h"
+#include "../base64/base64.h"
 
 /* FUNCTIONS */
 bool argVerify(int argc, char *firstArgument);
