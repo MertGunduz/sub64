@@ -183,7 +183,7 @@ unsigned int base64_decode(const char *in, unsigned int inlen, unsigned char *ou
 }
 
 /*
-* code is taken from Zhicheng Wei's base64 repository
+* code is taken from Wei Zhicheng's base64 repository
 *
 * repository URL: https://github.com/zhicheng/base64
 */
