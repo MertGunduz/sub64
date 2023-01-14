@@ -19,6 +19,7 @@
 bool argVerify(int argc, char *firstArgument);
 
 /* MENU FUNCTIONS */
+void praiseEncrypt(char *data);
 void githubMenu();
 void versionMenu();
 void helpMenu();

@@ -17,7 +17,7 @@ void main(int argc, char *argv[])
     {
         if (strcmp(argv[1], "-e") == 0 || strcmp(argv[1], "--encrypt") == 0)
         {
-            fprintf(stdout, "encrypt menu");
+            praiseEncrypt(argv[2]);
         }
         else if (strcmp(argv[1], "-d") == 0 || strcmp(argv[1], "--decrypt") == 0)
         {
