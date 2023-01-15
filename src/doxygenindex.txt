@@ -1,0 +1,113 @@
+/*! \mainpage praiselang (wordbook)
+ *
+ * \section intro_sec Introduction
+ * <hr>
+ * praiselang is a lightweight encryption/decryption algorithm that uses Base64 and praiselang substitution algorithm together.
+ *
+ * \n
+ *
+ * \section programminglanguage_sec Programming Language and Tools
+ * <hr>
+ * Programming Language: C, Bash \n
+ * Compiler: GNU GCC \n
+ * Build Tool: CMake \n
+ *
+ * \n
+ *
+ * \section dependency_sec Dependencies
+ * <hr>
+ * CMake (MIN 3.22)
+ *
+ * \n
+ *
+ * \section install_sec Installation
+ * <hr>
+ * \subsection step1 Step 1: Download the Source codes
+ *
+ * https://github.com/MertGunduz/praiselang
+ *
+ * \n
+ *
+ * \subsection step2 Step 2: Change permissions of INSTALL.sh
+ *
+ * \code{.sh}
+ * chmod 755 INSTALL.sh
+ * \endcode
+ *
+ * running this command will change the permission of the INSTALL.sh 
+ *
+ * \n
+ *
+ * \subsection step3 Step 3: Run INSTALL.sh
+ *
+ * \code{.sh}
+ * ./INSTALL.sh
+ * \endcode
+ *
+ * running this bash file will build the application.
+ *
+ * \note It can ask for sudo requirements.
+ *
+ * \n
+ *
+ * \subsection step4 Step 4: Test Application
+ *
+ * try running 
+ * \code{.unparsed}
+ * praiselang -h
+ * \endcode
+ * if there are some output related to wb then it means it is successfully builded
+ *
+ * \n
+ *
+ * \section use_sec How to use
+ * <hr>
+ *
+ * \subsection showwords Encrypting Text
+ * \code{.unparsed}
+ * praiselang -e [DATA]
+ * praiselang --encrypt [DATA]
+ * \endcode 
+ *
+ * encrypts the given data
+ *
+ * \n
+ *
+ * \subsection deletewords Decrypting Text
+ * \code{.unparsed}
+ * praiselang -d [DATA]
+ * praiselang --decrypt [DATA]
+ * \endcode 
+ *
+ * decrypts the given encrypted data 
+ *
+ * \n
+ *
+ * \subsection help Help
+ * \code{.unparsed}
+ * praiselang -h
+ * praiselang --help
+ * \endcode 
+ *
+ * outputs a detailed manuel about praiselang
+ *
+ * \n
+ *
+ * \subsection version Showing Version
+ * \code{.unparsed}
+ * praiselang -v
+ * praiselang --version
+ * \endcode 
+ *
+ * outputs the version of praiselang
+ *
+ * \n
+ * 
+ * \subsection sourcecode Showing Github
+ * \code{.unparsed}
+ * praiselang -g
+ * praiselang --github
+ * \endcode 
+ *
+ * outputs the source code link of praiselang
+*/
