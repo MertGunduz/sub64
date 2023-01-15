@@ -5,7 +5,7 @@ digraph "src/praiselanglib/versionMenu.c"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="src/praiselanglib/version\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="prints praiselang version related information"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="praiselanglib.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d44/praiselanglib_8h.html",tooltip=" "];
+  Node2 [label="praiselanglib.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d44/praiselanglib_8h.html",tooltip="the general praiselang library for encrypting and decrypting data"];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="stdio.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -1,12 +1,13 @@
-/**
- * @file praiselanhlib.h
+/** 
+ * @file praiselanglib.h
  * 
- * @brief the header file for praiselang
+ * @brief the general praiselang library for encrypting and decrypting data
  * 
  * @author Mehmet Mert Gunduz
  * 
  * @date 13/01/2023
- * @bug no known bugs
+ * @version 1.0.0
+ * @bug No known bugs.
 */
 
 /* INCLUDED LIBRARIES */
