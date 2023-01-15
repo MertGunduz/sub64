@@ -1,74 +1,84 @@
-# Praiselang
+# praiselang
 
-☉ Programming Language: <strong>C</strong> <br>
-☉ Operating System: <strong>Cross Platform</strong> <br>
-☉ Compiler: <strong>GCC</strong> <br>
+praiselang is a lightweight encryption/decryption algorithm that uses Base64 and praiselang substitution algorithm together.
 
-<i>Praiselang is a terminal based encryption/decryption language that allows you to make your text-messaging more secure. You can encrypt the text files and decrypt it.</i>
+## Programming Language and Tools
 
-## Praiselang Commands
+Programming Language: C, Bash <br>
+Compiler: GNU GCC <br>
+Build Tool: CMake 
 
-**1) TAKE LENGTH COMMAND**
+## Dependencies
 
-> <em>Purpose:</em> Takes the length of a plain text.
+CMake (MIN 3.22)
 
-> <em>How To Use:</em> <code>./praiselang.out **_"Enter Your Text Here"_**</code> 
+## Installation
 
-> <em>Example:</em> <code>./praiselang.out **_"Hello World!"_**</code>
+### Step 1: Download the Source codes
 
-    OUTPUT: 12
+https://github.com/MertGunduz/praiselang
 
-<br>
+### Step 2: Change permissions of INSTALL.sh
 
-**2) ENCRYPT TEXT COMMAND**
+```sh
+chmod 755 INSTALL.sh
+```
+running this command will change the permission of the INSTALL.sh
 
-> <em>Purpose: </em> Encrypts a plain text.
+### Step 3: Run INSTALL.sh
 
-> <em>How To Use:</em> <code>./praiselang.out **_Text Length "Enter Your Text Here" -e_**</code>
+```sh
+./INSTALL.sh
+```
+running this bash file will build the application
+##### Note: it can ask for sudo permission
 
-> <em>Example:</em> <code>./praiselang.out **_27 "C is a programming language" -e_**</code>
-  
-    OUTPUT: mastemazacharyrichardbridgetzacharyabrahamzacharyabigailjulianabethanymicaiahjulianaabrahamtabithatabitharichardroxannemicaiahzacharyallegraabrahamroxannemicaiahaayushiabrahammicaiahgabriel
+### Step 4: Test Application
 
-<br>
+try running
+```sh
+praiselang -h
+```
+if there are some output related to praiselang then it means it is successfully builded
 
-**3) DECRYPT TEXT COMMAND**
+## How to use
 
-> <em>Purpose: </em> Decrypts a plain text.
+### Encrypting Text
 
-> <em>How To Use:</em> <code>./praiselang.out **_Text Length "Enter Your Text Here" -d_**</code>
+```sh
+praiselang -e [DATA]
+praiselang --encrypt [DATA]
+```
+encrypts the given data
 
-> <em>Example:</em> <code>./praiselang.out **_21 "astartechemoshkukuduh" -d_**</code>
+### Decrypting Text
 
-    OUTPUT: RAM
-    
-<br>
-    
-**4) HELP COMMAND**
+```sh
+praiselang -d [DATA]
+praiselang --decrypt [DATA]
+```
+decrypts the given encrypted data
 
-> <em>Purpose: </em> Opens the help menu in terminal.
+### Help
 
-> <em>How To Use:</em> <code>./praiselang.out **_help_**</code>
+```sh
+praiselang -h
+praiselang --help
+```
+outputs a detailed manuel about praiselang
 
-    OUTPUT:
-    
-    |------------------|
-    | PRAISELANG GUIDE |
-    |------------------|
+### Showing Version
 
-    1) TAKE LENGTH COMMAND
+```sh
+praiselang -v
+praiselang --version
+```
+outputs the version of praiselang
 
-    How To Use --> ./praiselang.out <"Text">
-    Example --> ./praiselang.out "Hello World!"
+### Showing Github
 
-    2) ENCRYPT TEXT COMMAND
-
-    Note: Take the length of the text you want to encrypt before the encryption!
-    How To Use --> ./praiselang.out <Text Length> <"Text"> -e
-    Example --> ./praiselang.out 27 "C is a programming language" -e
-
-    3) DECRYPT TEXT COMMAND
-
-    Note: Take the length of the text you want to decrypt before the decryption!
-    How To Use --> ./praiselang.out <Text Length> <"Text"> -d
-    Example --> ./praiselang.out 21 "astartechemoshkukuduh" -d
+```sh
+praiselang -g
+praiselang --github
+```
+outputs the source code link of praiselang
