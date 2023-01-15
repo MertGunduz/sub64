@@ -21,7 +21,7 @@ void main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-d") == 0 || strcmp(argv[1], "--decrypt") == 0)
         {
-            fprintf(stdout, "decrypt menu");
+            praiseDecrypt(argv[2]);
         }
         else if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0)
         {

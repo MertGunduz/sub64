@@ -19,11 +19,13 @@ digraph "src/base64/base64.h"
   Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="src/praiselanglib/helpMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d4d/helpMenu_8c.html",tooltip="prints a help menu for praiselang"];
   Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="src/praiselanglib/praise\lEncrypt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/db5/praiseEncrypt_8c.html",tooltip="encrypts the given string with praiselang algorithm"];
+  Node9 [label="src/praiselanglib/praise\lDecrypt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dd0/praiseDecrypt_8c.html",tooltip="decrypts the given praiselang string"];
   Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node10 [label="src/praiselanglib/praise\lEncrypt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/db5/praiseEncrypt_8c.html",tooltip="encrypts the given string with praiselang algorithm"];
   Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="src/praiselanglib/version\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d5d/versionMenu_8c.html",tooltip="prints praiselang version related information"];
+  Node11 [label="src/praiselanglib/second\lArgumentMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
   Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node12 [label="src/praiselanglib/version\lMenu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d5d/versionMenu_8c.html",tooltip="prints praiselang version related information"];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="src/praiselanglib/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
 }

@@ -14,6 +14,7 @@
 #include "string.h"
 #include "stdbool.h"
 #include "stdlib.h"
+#include "ctype.h"
 #include "../base64/base64.h"
 
 /* CONTROL FUNCTIONS */
@@ -21,6 +22,7 @@ bool argVerify(int argc, char *firstArgument);
 
 /* MENU FUNCTIONS */
 void praiseEncrypt(char *data);
+void praiseDecrypt(char *data);
 void githubMenu();
 void versionMenu();
 void helpMenu();
