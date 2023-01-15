@@ -5,13 +5,14 @@
  *
  * @author Mehmet Mert Gunduz
  * 
- * @date 14/01/2023
+ * @date 15/01/2023
  * @bug no known bugs
 */
 
 #include "praiselanglib.h"
 
 /// @brief encrypts the given string with praiselang algorithm
+/// @paragraph data
 void praiseEncrypt(char *data)
 {
     /* STRING */
