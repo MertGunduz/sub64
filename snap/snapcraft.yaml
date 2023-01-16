@@ -6,9 +6,10 @@ description: |
   If you are working on a really important project or job and you want to communicate over messaging, using an encryption is one the best choices. Praiselang provides you a basic reversible encryption/decryption system.
   Praiselang works with Base64 and some basic substitution algorithm together in order to provide a safe encryption/decryption system.
   It is an open-source project and the source code can be found on Github: https://github.com/MertGunduz/praiselang
-
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+icon: praiselang.png
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+compression: lzo
 
 parts:
   my-part:
@@ -16,3 +17,13 @@ parts:
     plugin: cmake
     source: src/
     build-packages: [gcc, make, cmake, git, sed]
+  
+apps:
+  praiselang:
+    command: usr/bin/praiselang
+    plugs:
+    - cups-control
+    - browser-support
+    - desktop
+    - desktop-legacy
+    - gsettings
