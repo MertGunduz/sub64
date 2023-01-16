@@ -24,5 +24,5 @@ void helpMenu()
     fprintf(stdout, "-g, --github           outputs github url\n");
     fprintf(stdout, "-v, --version          outputs the version\n\n");
     fprintf(stdout, "issues and bugs related to praiselang\n");
-    fprintf(stdout, "open an issue: https://github.com/MertGunduz/wb/issues/new\n");
+    fprintf(stdout, "open an issue: https://github.com/MertGunduz/praiselang/issues/new\n");
 }
