@@ -4,6 +4,8 @@
  * <hr>
  * praiselang is a lightweight encryption/decryption algorithm that uses Base64 and praiselang substitution algorithm together.
  *
+ * youtube: https://www.youtube.com/watch?v=0gjHvFUlF_8
+ *
  * \n
  *
  * \section programminglanguage_sec Programming Language and Tools
