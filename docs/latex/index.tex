@@ -113,4 +113,28 @@ outputs the version of praiselang
 \end{DoxyCode}
 
 
-outputs the source code link of praiselang 
+outputs the source code link of praiselang
+
+~\newline
+ \hypertarget{index_encdecexamples}{}\doxysection{Encryption/\+Decryption Examples}\label{index_encdecexamples}
+\DoxyHorRuler{0}
+\hypertarget{index_encexample}{}\doxysubsection{Encrypting String}\label{index_encexample}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{praiselang -\/e hello}
+
+\end{DoxyCode}
+
+
+output\+: Tmljb25\+NZWdhb\+GVza\+XVz\+QXN0\+YXJvd\+Gh\+Bc3\+Rhcm90a\+FNvbm\+Vpb\+Gxvbg==
+
+~\newline
+ \hypertarget{index_decexample}{}\doxysubsection{Decrypting String}\label{index_decexample}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{praiselang -\/d Tmljb25NZWdhbGVzaXVzQXN0YXJvdGhBc3Rhcm90aFNvbmVpbGxvbg==}
+
+\end{DoxyCode}
+
+
+output\+: hello 

@@ -110,4 +110,25 @@
  * \endcode 
  *
  * outputs the source code link of praiselang
+ *
+ * \n
+ *
+ * \section encdecexamples Encryption/Decryption Examples
+ * <hr>
+ *
+ * \subsection encexample Encrypting String
+ * \code{.unparsed}
+ * praiselang -e hello
+ * \endcode
+ *
+ * output: Tmljb25NZWdhbGVzaXVzQXN0YXJvdGhBc3Rhcm90aFNvbmVpbGxvbg==
+ *
+ * \n
+ *
+ * \subsection decexample Decrypting String
+ * \code{.unparsed}
+ * praiselang -d Tmljb25NZWdhbGVzaXVzQXN0YXJvdGhBc3Rhcm90aFNvbmVpbGxvbg==
+ * \endcode
+ *
+ * output: hello
 */
