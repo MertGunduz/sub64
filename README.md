@@ -82,3 +82,22 @@ praiselang -g
 praiselang --github
 ```
 outputs the source code link of praiselang
+
+## Encryption/Decryption Examples
+
+### Encrypting String
+
+```sh
+praiselang -e praiselang
+```
+#### OUTPUT: 
+> Q2FycmVhdU9laWxsZXRYdWxNaW1vblJvc2llck1lZ2FsZXNpdXNBc3Rhcm90aFh1bEdyZXNzaWxMeWN1cw==
+
+### Decrypting String
+
+```sh
+praiselang -d Q2FycmVhdU9laWxsZXRYdWxNaW1vblJvc2llck1lZ2FsZXNpdXNBc3Rhcm90aFh1bEdyZXNzaWxMeWN1cw==
+```
+
+#### OUTPUT:
+> praiselang
