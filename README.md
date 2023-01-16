@@ -88,16 +88,16 @@ outputs the source code link of praiselang
 ### Encrypting String
 
 ```sh
-praiselang -e praiselang
+praiselang -e hello
 ```
 #### OUTPUT: 
-> Q2FycmVhdU9laWxsZXRYdWxNaW1vblJvc2llck1lZ2FsZXNpdXNBc3Rhcm90aFh1bEdyZXNzaWxMeWN1cw==
+> Tmljb25NZWdhbGVzaXVzQXN0YXJvdGhBc3Rhcm90aFNvbmVpbGxvbg==
 
 ### Decrypting String
 
 ```sh
-praiselang -d Q2FycmVhdU9laWxsZXRYdWxNaW1vblJvc2llck1lZ2FsZXNpdXNBc3Rhcm90aFh1bEdyZXNzaWxMeWN1cw==
+praiselang -d Tmljb25NZWdhbGVzaXVzQXN0YXJvdGhBc3Rhcm90aFNvbmVpbGxvbg==
 ```
 
 #### OUTPUT:
-> praiselang
+> hello
