@@ -11,7 +11,7 @@
 
 #include "../praiselanglib/praiselanglib.h"
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argVerify(argc, argv[1]))
     {

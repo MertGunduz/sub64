@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_20',['main',['../d8/d17/praiselang_8c.html#a91a3bbcc7eb26e8695255b2795d6e46f',1,'praiselang.c']]]
+  ['main_20',['main',['../d8/d17/praiselang_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'praiselang.c']]]
 ];
