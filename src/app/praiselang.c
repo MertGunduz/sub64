@@ -36,4 +36,6 @@ int main(int argc, char *argv[])
             githubMenu();
         }
     }
+
+    return 0;
 }
