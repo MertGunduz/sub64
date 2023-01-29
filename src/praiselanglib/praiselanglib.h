@@ -10,6 +10,9 @@
  * @bug No known bugs.
 */
 
+#ifndef PRAISELANGLIB_H
+#define PRAISELANGLIB_H
+
 /* INCLUDED LIBRARIES */
 #include <stdio.h>
 #include <string.h>
@@ -81,3 +84,5 @@ static char *praiseArray[] =
     /* 126  */  /*   127   */
     "Infernus", "Arreliarius" 
 };
+
+#endif /* PRAISELANGLIB_H */
