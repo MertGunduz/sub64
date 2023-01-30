@@ -14,7 +14,7 @@
 /// @brief prints information about wrong arguments
 void badArgcMessage(int argc)
 {
-    fprintf(stdout, "praiselang: please enter the arguments correctly\n");
-    fprintf(stdout, "praiselang: prompted total arguments: %d\n", argc - 1);
-    fprintf(stdout, "praiselang: try \'praiselang --help\' for more information\n");
+    fprintf(stderr, "praiselang: please enter the arguments correctly\n");
+    fprintf(stderr, "praiselang: prompted total arguments: %d\n", argc - 1);
+    fprintf(stderr, "praiselang: try \'praiselang --help\' for more information\n");
 }

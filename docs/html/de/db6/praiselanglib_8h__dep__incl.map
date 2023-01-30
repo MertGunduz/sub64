@@ -1,0 +1,13 @@
+<map id="src/praiselanglib/praiselanglib.h" name="src/praiselanglib/praiselanglib.h">
+<area shape="rect" id="node1" title="the general praiselang library for encrypting and decrypting data" alt="" coords="912,5,1141,32"/>
+<area shape="rect" id="node2" href="$d8/d17/praiselang_8c.html" title="the main application file of praiselang" alt="" coords="5,87,157,114"/>
+<area shape="rect" id="node3" href="$d1/d2a/argVerify_8c.html" title="tests the arguments, argument count and returns true (bool) if prompted arguments are true" alt="" coords="181,87,381,114"/>
+<area shape="rect" id="node4" href="$d0/d9e/badArgcMessage_8c.html" title="prints information about wrong arguments" alt="" coords="405,80,592,121"/>
+<area shape="rect" id="node5" href="$dc/d5a/githubMenu_8c.html" title="prints github source code related information" alt="" coords="617,80,791,121"/>
+<area shape="rect" id="node6" href="$d6/d4d/helpMenu_8c.html" title="prints a help menu for praiselang" alt="" coords="816,87,1024,114"/>
+<area shape="rect" id="node7" href="$da/dd0/praiseDecrypt_8c.html" title="decrypts the given praiselang string" alt="" coords="1048,80,1221,121"/>
+<area shape="rect" id="node8" href="$d4/db5/praiseEncrypt_8c.html" title="encrypts the given string with praiselang algorithm" alt="" coords="1245,80,1419,121"/>
+<area shape="rect" id="node9" href="$da/d9f/secondArgumentMissingMessage_8c.html" title="prints information about missing second argument" alt="" coords="1443,80,1648,121"/>
+<area shape="rect" id="node10" href="$de/d5d/versionMenu_8c.html" title="prints praiselang version related information" alt="" coords="1672,80,1853,121"/>
+<area shape="rect" id="node11" href="$dd/d10/wrongArgumentsMessage_8c.html" title="prints information about wrong arguments" alt="" coords="1878,80,2122,121"/>
+</map>

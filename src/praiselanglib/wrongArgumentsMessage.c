@@ -14,6 +14,6 @@
 /// @brief prints information about wrong arguments
 void wrongArgumentsMessage()
 {
-    fprintf(stdout, "praiselang: invalid argument, please enter valid arguments\n");
-    fprintf(stdout, "praiselang: try \'praiselang --help\' for more information\n");
+    fprintf(stderr, "praiselang: invalid argument, please enter valid arguments\n");
+    fprintf(stderr, "praiselang: try \'praiselang --help\' for more information\n");
 }

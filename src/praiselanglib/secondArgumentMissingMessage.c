@@ -14,6 +14,6 @@
 /// @brief prints information about missing second argument
 void secondArgumentMissingMessage()
 {
-    fprintf(stdout, "praiselang: second argument missing, please enter the data\n");
-    fprintf(stdout, "praiselang: try \'praiselang --help\' for more information\n");
+    fprintf(stderr, "praiselang: second argument missing, please enter the data\n");
+    fprintf(stderr, "praiselang: try \'praiselang --help\' for more information\n");
 }
