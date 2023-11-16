@@ -1,4 +1,4 @@
-# praiselang
+# sub64
 
 praiselang is a lightweight encryption/decryption algorithm that uses Base64 and praiselang substitution algorithm together.
 
