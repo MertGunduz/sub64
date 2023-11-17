@@ -12,6 +12,6 @@
 
 void vall_err_msg(char *option)
 {
-    fprintf(stderr, "sub64: \"%s\" is a two parameter command, please use command in the requested format by adding second value.\n", option);
+    fprintf(stderr, "sub64: \"%s\" is a two parameter command, please use command in the requested format.\n", option);
     fprintf(stderr, "sub64: prompt \"man sub64\" or \"sub64 --help\" to read the user manual.\n");
 }
