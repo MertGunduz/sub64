@@ -12,8 +12,31 @@
 #include <stdbool.h>
 
 #include "../msg/sub64_msg.h"
+#include "../menus/sub64_menus.h"
 
 bool verify_args(int total_args, char *argument);
+
+typedef struct one_command
+{
+    char *command_text;
+    void (*func)();
+} sub64_one_command;
+
+typedef struct two_command
+{
+    char *command_text;
+    void (*func)(char *argument);
+} sub64_two_command;
+
+static sub64_one_command one_arg_structs[] = 
+{
+    {"--help", help_menu}
+};
+
+static sub64_two_command two_arg_structs[] = 
+{
+
+};
 
 char *two_arg_commands[] = {"--encrypt", "--decrypt", "--generate-key"};
 char *one_arg_commands[] = {"--export-key", "--import-key", "--help", "--website", "--github", "--version", "--config"};
@@ -22,9 +45,21 @@ int main(int argc, char *argv[])
 {
     if (verify_args(argc, argv[1]))
     {
-        char *option = argv[1];
+        for (size_t i = 0; i < sizeof(one_arg_structs) / sizeof(one_arg_structs[0]); i++)
+        {
+            if (strcmp(argv[1], one_arg_structs[i].command_text) == 0)
+            {
+                one_arg_structs[i].func();
+            }
+        }
 
-        fprintf(stdout, "%s\n", option);
+        for (size_t i = 0; i < sizeof(two_arg_structs) / sizeof(two_arg_structs[0]); i++)
+        {
+            if (strcmp(argv[1], two_arg_structs[i].command_text) == 0)
+            {
+                two_arg_structs[i].func(argv[2]);
+            }
+        }
     }
 }
 
