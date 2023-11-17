@@ -30,5 +30,5 @@ void help_menu()
     fprintf(stdout, "--help                outputs the help menu\n"); 
     fprintf(stdout, "--version             outputs the version menu\n");
     fprintf(stdout, "--github              outputs the github menu\n");
-    fprintf(stdout, "--website             outputs the website menu\n\n");
+    fprintf(stdout, "--docs                outputs the website menu\n\n");
 }
