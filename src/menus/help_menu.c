@@ -24,7 +24,7 @@ void help_menu()
     fprintf(stdout, "--decrypt \"[TEXT]\"  decrypts the given text\n\n");
 
     fprintf(stdout, "sub64 key generation\n");
-    fprintf(stdout, "--genkey \"[SEED]\"   generates a key by using seed\n\n");
+    fprintf(stdout, "--gen-key \"[SEED]\"   generates a key by using seed\n\n");
 
     fprintf(stdout, "yiffy information menu arguments\n");
     fprintf(stdout, "--help                outputs the help menu\n"); 
