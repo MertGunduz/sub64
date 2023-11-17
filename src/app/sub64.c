@@ -31,7 +31,8 @@ typedef struct two_command
 static sub64_one_command one_arg_structs[] = 
 {
     {"--help", help_menu},
-    {"--version", version_menu}
+    {"--version", version_menu},
+    {"--github", github_menu}
 };
 
 /*
