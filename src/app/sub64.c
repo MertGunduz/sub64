@@ -39,11 +39,11 @@ static sub64_one_command one_arg_structs[] =
 /*
 static sub64_two_command two_arg_structs[] = 
 {
-
+    {"--gen-key"}
 };
 */
 
-char *two_arg_commands[] = {"--encrypt", "--decrypt", "--generate-key", "--import-key"};
+char *two_arg_commands[] = {"--encrypt", "--decrypt", "--gen-key", "--import-key"};
 char *one_arg_commands[] = {"--export-key", "--help", "--github", "--version", "--docs"};
 
 int main(int argc, char *argv[])
