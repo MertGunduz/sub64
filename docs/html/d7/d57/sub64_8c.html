@@ -69,11 +69,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sub64.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+
+<p>This file is the main application file, provides command option check and validity.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d3f/sub64__msg_8h_source.html">../msg/sub64_msg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d72/sub64__menus_8h_source.html">../menus/sub64_menus.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sub64.c:</div>
 <div class="dyncontent">
@@ -82,11 +91,70 @@ Include dependency graph for sub64.c:</div>
 </div>
 <p><a href="../../d7/d57/sub64_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de7/structone__command.html">one_command</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/structtwo__command.html">two_command</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ad80963821f2c4b0426f18e94abe198f6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../dd/de7/structone__command.html">one_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#ad80963821f2c4b0426f18e94abe198f6">sub64_one_command</a></td></tr>
+<tr class="separator:ad80963821f2c4b0426f18e94abe198f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34cc6e04340108022fa37ad254a4ca97"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/d38/structtwo__command.html">two_command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#a34cc6e04340108022fa37ad254a4ca97">sub64_two_command</a></td></tr>
+<tr class="separator:a34cc6e04340108022fa37ad254a4ca97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7161047ab958045033c4a505b9b0c000"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">verify_args</a> (int total_args, char *argument)</td></tr>
+<tr class="memdesc:a7161047ab958045033c4a505b9b0c000"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is used to verify wanted argument count and argument.  <a href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">More...</a><br /></td></tr>
+<tr class="separator:a7161047ab958045033c4a505b9b0c000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a72ead14d38a5895538633016d551be6a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a> [] = {&quot;--encrypt&quot;, &quot;--decrypt&quot;, &quot;--gen-key&quot;, &quot;--import-key&quot;}</td></tr>
+<tr class="separator:a72ead14d38a5895538633016d551be6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89d6df7a7ddb0c57e098be8ae179f51"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a> [] = {&quot;--export-key&quot;, &quot;--help&quot;, &quot;--github&quot;, &quot;--version&quot;, &quot;--docs&quot;}</td></tr>
+<tr class="separator:ad89d6df7a7ddb0c57e098be8ae179f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This file is the main application file, provides command option check and validity. </p>
+<dl class="section author"><dt>Author</dt><dd>Mehmet Mert Gunduz</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>17/11/2023 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ad80963821f2c4b0426f18e94abe198f6" name="ad80963821f2c4b0426f18e94abe198f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80963821f2c4b0426f18e94abe198f6">&#9670;&nbsp;</a></span>sub64_one_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../dd/de7/structone__command.html">one_command</a> <a class="el" href="../../d7/d57/sub64_8c.html#ad80963821f2c4b0426f18e94abe198f6">sub64_one_command</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34cc6e04340108022fa37ad254a4ca97" name="a34cc6e04340108022fa37ad254a4ca97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cc6e04340108022fa37ad254a4ca97">&#9670;&nbsp;</a></span>sub64_two_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d3/d38/structtwo__command.html">two_command</a> <a class="el" href="../../d7/d57/sub64_8c.html#a34cc6e04340108022fa37ad254a4ca97">sub64_two_command</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
@@ -114,7 +182,80 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d57/sub64_8c_source.html#l00003">3</a> of file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d57/sub64_8c_source.html#l00047">47</a> of file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
+
+</div>
+</div>
+<a id="a7161047ab958045033c4a505b9b0c000" name="a7161047ab958045033c4a505b9b0c000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7161047ab958045033c4a505b9b0c000">&#9670;&nbsp;</a></span>verify_args()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool verify_args </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argument</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is used to verify wanted argument count and argument. </p>
+<p >First it checks how many commands prompted by the user (argc). It can only process two or three argument count commands. If it has got more than 3, less than 2 argc, it will show some error message to user.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">total_args</td><td>The total arguments passed by user. </td></tr>
+    <tr><td class="paramname">argument</td><td>The main option passed by user. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d57/sub64_8c_source.html#l00078">78</a> of file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad89d6df7a7ddb0c57e098be8ae179f51" name="ad89d6df7a7ddb0c57e098be8ae179f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89d6df7a7ddb0c57e098be8ae179f51">&#9670;&nbsp;</a></span>one_arg_commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* one_arg_commands[] = {&quot;--export-key&quot;, &quot;--help&quot;, &quot;--github&quot;, &quot;--version&quot;, &quot;--docs&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d57/sub64_8c_source.html#l00045">45</a> of file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
+
+</div>
+</div>
+<a id="a72ead14d38a5895538633016d551be6a" name="a72ead14d38a5895538633016d551be6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ead14d38a5895538633016d551be6a">&#9670;&nbsp;</a></span>two_arg_commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* two_arg_commands[] = {&quot;--encrypt&quot;, &quot;--decrypt&quot;, &quot;--gen-key&quot;, &quot;--import-key&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d57/sub64_8c_source.html#l00044">44</a> of file <a class="el" href="../../d7/d57/sub64_8c_source.html">sub64.c</a>.</p>
 
 </div>
 </div>

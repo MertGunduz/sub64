@@ -39,11 +39,11 @@ static sub64_one_command one_arg_structs[] =
 /*
 static sub64_two_command two_arg_structs[] = 
 {
-    {"--gen-key"}
+
 };
 */
 
-char *two_arg_commands[] = {"--encrypt", "--decrypt", "--gen-key", "--import-key"};
+char *two_arg_commands[] = {"--encrypt", "--decrypt", "--import-key"};
 char *one_arg_commands[] = {"--export-key", "--help", "--github", "--version", "--docs"};
 
 int main(int argc, char *argv[])
@@ -58,13 +58,15 @@ int main(int argc, char *argv[])
             }
         }
 
-        /*for (size_t i = 0; i < sizeof(two_arg_structs) / sizeof(two_arg_structs[0]); i++)
+        /*
+        for (size_t i = 0; i < sizeof(two_arg_structs) / sizeof(two_arg_structs[0]); i++)
         {
             if (strcmp(argv[1], two_arg_structs[i].command_text) == 0)
             {
                 two_arg_structs[i].func(argv[2]);
             }
-        }*/
+        }
+        */
     }
 }
 

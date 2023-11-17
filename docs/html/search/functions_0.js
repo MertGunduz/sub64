@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['base64_5fdecode_0',['base64_decode',['../db/d36/base64_8c.html#a83f7365633f396a13b8b2346afd75115',1,'base64_decode(const char *in, unsigned int inlen, unsigned char *out):&#160;base64.c'],['../d2/d6f/base64_8h.html#a83f7365633f396a13b8b2346afd75115',1,'base64_decode(const char *in, unsigned int inlen, unsigned char *out):&#160;base64.c']]],
-  ['base64_5fencode_1',['base64_encode',['../db/d36/base64_8c.html#a514f4adba027ad85f3e072c03ced130e',1,'base64_encode(const unsigned char *in, unsigned int inlen, char *out):&#160;base64.c'],['../d2/d6f/base64_8h.html#a514f4adba027ad85f3e072c03ced130e',1,'base64_encode(const unsigned char *in, unsigned int inlen, char *out):&#160;base64.c']]]
+  ['argc_5ferr_5fmsg_0',['argc_err_msg',['../d7/d4d/argc__err__msg_8c.html#a2177be51f7cf180bd995417575018010',1,'argc_err_msg():&#160;argc_err_msg.c'],['../d2/d3f/sub64__msg_8h.html#a2177be51f7cf180bd995417575018010',1,'argc_err_msg():&#160;argc_err_msg.c']]]
 ];

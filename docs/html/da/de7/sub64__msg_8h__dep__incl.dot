@@ -3,7 +3,15 @@ digraph "src/msg/sub64_msg.h"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="src/msg/sub64_msg.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [label="src/msg/sub64_msg.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This header file is used to output help/error messages to user."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="src/msg/total_argument\l_error.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dc0/total__argument__error_8c.html",tooltip="This file and function is used to give information when user entered more or less arguments executing..."];
+  Node2 [label="src/app/sub64.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d57/sub64_8c.html",tooltip="This file is the main application file, provides command option check and validity."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/msg/argc_err_msg.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d4d/argc__err__msg_8c.html",tooltip="Gives information when user enters more or less parameters than the requested format."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/msg/not_valid_arg.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/db8/not__valid__arg_8c.html",tooltip="Gives error information when user didn't enter a meaningful command."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/msg/one_arg_err\l_msg.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d62/one__arg__err__msg_8c.html",tooltip="Gives error information when user enters two command by using no-value taking command."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/msg/val_err_msg.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/dbb/val__err__msg_8c.html",tooltip=" "];
 }

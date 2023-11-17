@@ -1,13 +1,74 @@
 \hypertarget{sub64_8c}{}\doxysection{src/app/sub64.c File Reference}
 \label{sub64_8c}\index{src/app/sub64.c@{src/app/sub64.c}}
-{\ttfamily \#include $<$stdio.\+h$>$}\newline
+
+
+This file is the main application file, provides command option check and validity.  
+
+
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../msg/sub64\+\_\+msg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../menus/sub64\+\_\+menus.\+h\char`\"{}}\newline
 Include dependency graph for sub64.\+c\+:
 % FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structone__command}{one\+\_\+command}}
+\item 
+struct \mbox{\hyperlink{structtwo__command}{two\+\_\+command}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structone__command}{one\+\_\+command}} \mbox{\hyperlink{sub64_8c_ad80963821f2c4b0426f18e94abe198f6}{sub64\+\_\+one\+\_\+command}}
+\item 
+typedef struct \mbox{\hyperlink{structtwo__command}{two\+\_\+command}} \mbox{\hyperlink{sub64_8c_a34cc6e04340108022fa37ad254a4ca97}{sub64\+\_\+two\+\_\+command}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+bool \mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{verify\+\_\+args}} (int total\+\_\+args, char $\ast$argument)
+\begin{DoxyCompactList}\small\item\em This function is used to verify wanted argument count and argument. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\+\_\+arg\+\_\+commands}} \mbox{[}$\,$\mbox{]} = \{\char`\"{}-\/-\/encrypt\char`\"{}, \char`\"{}-\/-\/decrypt\char`\"{}, \char`\"{}-\/-\/gen-\/key\char`\"{}, \char`\"{}-\/-\/import-\/key\char`\"{}\}
+\item 
+char $\ast$ \mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\+\_\+arg\+\_\+commands}} \mbox{[}$\,$\mbox{]} = \{\char`\"{}-\/-\/export-\/key\char`\"{}, \char`\"{}-\/-\/help\char`\"{}, \char`\"{}-\/-\/github\char`\"{}, \char`\"{}-\/-\/version\char`\"{}, \char`\"{}-\/-\/docs\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is the main application file, provides command option check and validity. 
+
+\begin{DoxyAuthor}{Author}
+Mehmet Mert Gunduz
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+17/11/2023 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{sub64_8c_ad80963821f2c4b0426f18e94abe198f6}\label{sub64_8c_ad80963821f2c4b0426f18e94abe198f6}} 
+\index{sub64.c@{sub64.c}!sub64\_one\_command@{sub64\_one\_command}}
+\index{sub64\_one\_command@{sub64\_one\_command}!sub64.c@{sub64.c}}
+\doxysubsubsection{\texorpdfstring{sub64\_one\_command}{sub64\_one\_command}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structone__command}{one\+\_\+command}} \mbox{\hyperlink{sub64_8c_ad80963821f2c4b0426f18e94abe198f6}{sub64\+\_\+one\+\_\+command}}}
+
+\mbox{\Hypertarget{sub64_8c_a34cc6e04340108022fa37ad254a4ca97}\label{sub64_8c_a34cc6e04340108022fa37ad254a4ca97}} 
+\index{sub64.c@{sub64.c}!sub64\_two\_command@{sub64\_two\_command}}
+\index{sub64\_two\_command@{sub64\_two\_command}!sub64.c@{sub64.c}}
+\doxysubsubsection{\texorpdfstring{sub64\_two\_command}{sub64\_two\_command}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structtwo__command}{two\+\_\+command}} \mbox{\hyperlink{sub64_8c_a34cc6e04340108022fa37ad254a4ca97}{sub64\+\_\+two\+\_\+command}}}
+
 
 
 \doxysubsection{Function Documentation}
@@ -19,5 +80,51 @@ int \mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int arg
 
 
 
-Definition at line \mbox{\hyperlink{sub64_8c_source_l00003}{3}} of file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
+Definition at line \mbox{\hyperlink{sub64_8c_source_l00047}{47}} of file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
+
+\mbox{\Hypertarget{sub64_8c_a7161047ab958045033c4a505b9b0c000}\label{sub64_8c_a7161047ab958045033c4a505b9b0c000}} 
+\index{sub64.c@{sub64.c}!verify\_args@{verify\_args}}
+\index{verify\_args@{verify\_args}!sub64.c@{sub64.c}}
+\doxysubsubsection{\texorpdfstring{verify\_args()}{verify\_args()}}
+{\footnotesize\ttfamily bool verify\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{total\+\_\+args,  }\item[{char $\ast$}]{argument }\end{DoxyParamCaption})}
+
+
+
+This function is used to verify wanted argument count and argument. 
+
+First it checks how many commands prompted by the user (argc). It can only process two or three argument count commands. If it has got more than 3, less than 2 argc, it will show some error message to user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+\_\+args} & The total arguments passed by user. \\
+\hline
+{\em argument} & The main option passed by user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{sub64_8c_source_l00078}{78}} of file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}\label{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}} 
+\index{sub64.c@{sub64.c}!one\_arg\_commands@{one\_arg\_commands}}
+\index{one\_arg\_commands@{one\_arg\_commands}!sub64.c@{sub64.c}}
+\doxysubsubsection{\texorpdfstring{one\_arg\_commands}{one\_arg\_commands}}
+{\footnotesize\ttfamily char$\ast$ one\+\_\+arg\+\_\+commands\mbox{[}$\,$\mbox{]} = \{\char`\"{}-\/-\/export-\/key\char`\"{}, \char`\"{}-\/-\/help\char`\"{}, \char`\"{}-\/-\/github\char`\"{}, \char`\"{}-\/-\/version\char`\"{}, \char`\"{}-\/-\/docs\char`\"{}\}}
+
+
+
+Definition at line \mbox{\hyperlink{sub64_8c_source_l00045}{45}} of file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
+
+\mbox{\Hypertarget{sub64_8c_a72ead14d38a5895538633016d551be6a}\label{sub64_8c_a72ead14d38a5895538633016d551be6a}} 
+\index{sub64.c@{sub64.c}!two\_arg\_commands@{two\_arg\_commands}}
+\index{two\_arg\_commands@{two\_arg\_commands}!sub64.c@{sub64.c}}
+\doxysubsubsection{\texorpdfstring{two\_arg\_commands}{two\_arg\_commands}}
+{\footnotesize\ttfamily char$\ast$ two\+\_\+arg\+\_\+commands\mbox{[}$\,$\mbox{]} = \{\char`\"{}-\/-\/encrypt\char`\"{}, \char`\"{}-\/-\/decrypt\char`\"{}, \char`\"{}-\/-\/gen-\/key\char`\"{}, \char`\"{}-\/-\/import-\/key\char`\"{}\}}
+
+
+
+Definition at line \mbox{\hyperlink{sub64_8c_source_l00044}{44}} of file \mbox{\hyperlink{sub64_8c_source}{sub64.\+c}}.
 

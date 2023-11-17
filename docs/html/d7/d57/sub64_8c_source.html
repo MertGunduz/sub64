@@ -71,25 +71,138 @@ $(function() {
   <div class="headertitle"><div class="title">sub64.c</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d7/d57/sub64_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">    3</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">static</span> <span class="keywordtype">void</span> argument_verify(<span class="keywordtype">int</span> total_arguments, <span class="keywordtype">char</span> *option)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">if</span> (total_arguments == 2 || total_arguments == 3)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<a href="../../d7/d57/sub64_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;../msg/sub64_msg.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;../menus/sub64_menus.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">verify_args</a>(<span class="keywordtype">int</span> total_args, <span class="keywordtype">char</span> *argument);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="comment">// msg</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
-<div class="ttc" id="asub64_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00003">sub64.c:3</a></div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dd/de7/structone__command.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../dd/de7/structone__command.html">one_command</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../dd/de7/structone__command.html#a9e945e2d67e20f410f1826cdc1d2a4c2">   21</a></span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../dd/de7/structone__command.html#a9e945e2d67e20f410f1826cdc1d2a4c2">command_text</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../dd/de7/structone__command.html#af9e0e826beb93f988a01c056a50e3962">   22</a></span>    void (*<a class="code hl_variable" href="../../dd/de7/structone__command.html#af9e0e826beb93f988a01c056a50e3962">func</a>)();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#ad80963821f2c4b0426f18e94abe198f6">   23</a></span>} <a class="code hl_typedef" href="../../d7/d57/sub64_8c.html#ad80963821f2c4b0426f18e94abe198f6">sub64_one_command</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d3/d38/structtwo__command.html">   25</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d38/structtwo__command.html">two_command</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d3/d38/structtwo__command.html#a7c5732674c8dded3a008b131658558d7">   27</a></span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d3/d38/structtwo__command.html#a7c5732674c8dded3a008b131658558d7">command_text</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d3/d38/structtwo__command.html#aab1b677e84bd99dab8d32ac8ccf38756">   28</a></span>    void (*<a class="code hl_variable" href="../../d3/d38/structtwo__command.html#aab1b677e84bd99dab8d32ac8ccf38756">func</a>)(<span class="keywordtype">char</span> *argument);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#a34cc6e04340108022fa37ad254a4ca97">   29</a></span>} <a class="code hl_typedef" href="../../d7/d57/sub64_8c.html#a34cc6e04340108022fa37ad254a4ca97">sub64_two_command</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">static</span> <a class="code hl_struct" href="../../dd/de7/structone__command.html">sub64_one_command</a> one_arg_structs[] = </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {<span class="stringliteral">&quot;--help&quot;</span>, <a class="code hl_function" href="../../d6/d04/help__menu_8c.html#a1c8fc504350d80b9d81d45b7723269d4">help_menu</a>},</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {<span class="stringliteral">&quot;--version&quot;</span>, <a class="code hl_function" href="../../d1/d72/sub64__menus_8h.html#a15db41dd614eff946c632b69148715c4">version_menu</a>},</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {<span class="stringliteral">&quot;--github&quot;</span>, <a class="code hl_function" href="../../d7/d40/github__menu_8c.html#a1f3714e01a97f50db8ab6ed7c023d6fd">github_menu</a>},</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {<span class="stringliteral">&quot;--docs&quot;</span>, <a class="code hl_function" href="../../d5/dbd/docs__menu_8c.html#acf63399322b7b3d545c1f568b0460667">docs_menu</a>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <a class="code hl_struct" href="../../d3/d38/structtwo__command.html">sub64_two_command</a> two_arg_structs[] = </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {<span class="stringliteral">&quot;--gen-key&quot;</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">   44</a></span><span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>[] = {<span class="stringliteral">&quot;--encrypt&quot;</span>, <span class="stringliteral">&quot;--decrypt&quot;</span>, <span class="stringliteral">&quot;--gen-key&quot;</span>, <span class="stringliteral">&quot;--import-key&quot;</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">   45</a></span><span class="keywordtype">char</span> *<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>[] = {<span class="stringliteral">&quot;--export-key&quot;</span>, <span class="stringliteral">&quot;--help&quot;</span>, <span class="stringliteral">&quot;--github&quot;</span>, <span class="stringliteral">&quot;--version&quot;</span>, <span class="stringliteral">&quot;--docs&quot;</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">   47</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">verify_args</a>(argc, argv[1]))</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(one_arg_structs) / <span class="keyword">sizeof</span>(one_arg_structs[0]); i++)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">if</span> (strcmp(argv[1], one_arg_structs[i].command_text) == 0)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                one_arg_structs[i].<a class="code hl_variable" href="../../dd/de7/structone__command.html#af9e0e826beb93f988a01c056a50e3962">func</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">/*for (size_t i = 0; i &lt; sizeof(two_arg_structs) / sizeof(two_arg_structs[0]); i++)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">        {</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">            if (strcmp(argv[1], two_arg_structs[i].command_text) == 0)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">            {</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">                two_arg_structs[i].func(argv[2]);</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">            }</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">        }*/</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">   78</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">verify_args</a>(<span class="keywordtype">int</span> total_args, <span class="keywordtype">char</span> *argument)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span> (total_args == 2)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>) / <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>[0]); i++)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">if</span> (strcmp(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>[i], argument) == 0)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            {                </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>) / <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>[0]); i++)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span> (strcmp(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>[i], argument) == 0)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <a class="code hl_function" href="../../d2/d3f/sub64__msg_8h.html#a0f8b73749265af82f1ffe78ecfc98e96">vall_err_msg</a>(argument);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_function" href="../../d2/db8/not__valid__arg_8c.html#a8fdd722924bfb1068a3bb68d037d03c8">not_valid_arg</a>(argument);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (total_args == 3)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>) / <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>[0]); i++)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">if</span> (strcmp(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a>[i], argument) == 0)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <a class="code hl_function" href="../../d0/d62/one__arg__err__msg_8c.html#a2ac4e4596098672a9105ba5e27f2b071">one_arg_err_msg</a>(argument);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>) / <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>[0]); i++)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">if</span> (strcmp(<a class="code hl_variable" href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a>[i], argument) == 0)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            {                </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <a class="code hl_function" href="../../d2/db8/not__valid__arg_8c.html#a8fdd722924bfb1068a3bb68d037d03c8">not_valid_arg</a>(argument);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <a class="code hl_function" href="../../d7/d4d/argc__err__msg_8c.html#a2177be51f7cf180bd995417575018010">argc_err_msg</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="ttc" id="aargc__err__msg_8c_html_a2177be51f7cf180bd995417575018010"><div class="ttname"><a href="../../d7/d4d/argc__err__msg_8c.html#a2177be51f7cf180bd995417575018010">argc_err_msg</a></div><div class="ttdeci">void argc_err_msg()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d4d/argc__err__msg_8c_source.html#l00013">argc_err_msg.c:13</a></div></div>
+<div class="ttc" id="adocs__menu_8c_html_acf63399322b7b3d545c1f568b0460667"><div class="ttname"><a href="../../d5/dbd/docs__menu_8c.html#acf63399322b7b3d545c1f568b0460667">docs_menu</a></div><div class="ttdeci">void docs_menu()</div><div class="ttdoc">This function is used to show docs URL.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/docs__menu_8c_source.html#l00016">docs_menu.c:16</a></div></div>
+<div class="ttc" id="agithub__menu_8c_html_a1f3714e01a97f50db8ab6ed7c023d6fd"><div class="ttname"><a href="../../d7/d40/github__menu_8c.html#a1f3714e01a97f50db8ab6ed7c023d6fd">github_menu</a></div><div class="ttdeci">void github_menu()</div><div class="ttdoc">Shows the project github URL, current issues to user.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d40/github__menu_8c_source.html#l00016">github_menu.c:16</a></div></div>
+<div class="ttc" id="ahelp__menu_8c_html_a1c8fc504350d80b9d81d45b7723269d4"><div class="ttname"><a href="../../d6/d04/help__menu_8c.html#a1c8fc504350d80b9d81d45b7723269d4">help_menu</a></div><div class="ttdeci">void help_menu()</div><div class="ttdoc">This function shows general informatiuon about sub64.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d04/help__menu_8c_source.html#l00016">help_menu.c:16</a></div></div>
+<div class="ttc" id="anot__valid__arg_8c_html_a8fdd722924bfb1068a3bb68d037d03c8"><div class="ttname"><a href="../../d2/db8/not__valid__arg_8c.html#a8fdd722924bfb1068a3bb68d037d03c8">not_valid_arg</a></div><div class="ttdeci">void not_valid_arg(char *option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db8/not__valid__arg_8c_source.html#l00013">not_valid_arg.c:13</a></div></div>
+<div class="ttc" id="aone__arg__err__msg_8c_html_a2ac4e4596098672a9105ba5e27f2b071"><div class="ttname"><a href="../../d0/d62/one__arg__err__msg_8c.html#a2ac4e4596098672a9105ba5e27f2b071">one_arg_err_msg</a></div><div class="ttdeci">void one_arg_err_msg(char *option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d62/one__arg__err__msg_8c_source.html#l00013">one_arg_err_msg.c:13</a></div></div>
+<div class="ttc" id="astructone__command_html"><div class="ttname"><a href="../../dd/de7/structone__command.html">one_command</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00019">sub64.c:20</a></div></div>
+<div class="ttc" id="astructone__command_html_a9e945e2d67e20f410f1826cdc1d2a4c2"><div class="ttname"><a href="../../dd/de7/structone__command.html#a9e945e2d67e20f410f1826cdc1d2a4c2">one_command::command_text</a></div><div class="ttdeci">char * command_text</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00021">sub64.c:21</a></div></div>
+<div class="ttc" id="astructone__command_html_af9e0e826beb93f988a01c056a50e3962"><div class="ttname"><a href="../../dd/de7/structone__command.html#af9e0e826beb93f988a01c056a50e3962">one_command::func</a></div><div class="ttdeci">void(* func)()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00022">sub64.c:22</a></div></div>
+<div class="ttc" id="astructtwo__command_html"><div class="ttname"><a href="../../d3/d38/structtwo__command.html">two_command</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00025">sub64.c:26</a></div></div>
+<div class="ttc" id="astructtwo__command_html_a7c5732674c8dded3a008b131658558d7"><div class="ttname"><a href="../../d3/d38/structtwo__command.html#a7c5732674c8dded3a008b131658558d7">two_command::command_text</a></div><div class="ttdeci">char * command_text</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00027">sub64.c:27</a></div></div>
+<div class="ttc" id="astructtwo__command_html_aab1b677e84bd99dab8d32ac8ccf38756"><div class="ttname"><a href="../../d3/d38/structtwo__command.html#aab1b677e84bd99dab8d32ac8ccf38756">two_command::func</a></div><div class="ttdeci">void(* func)(char *argument)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00028">sub64.c:28</a></div></div>
+<div class="ttc" id="asub64_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00047">sub64.c:47</a></div></div>
+<div class="ttc" id="asub64_8c_html_a34cc6e04340108022fa37ad254a4ca97"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#a34cc6e04340108022fa37ad254a4ca97">sub64_two_command</a></div><div class="ttdeci">struct two_command sub64_two_command</div></div>
+<div class="ttc" id="asub64_8c_html_a7161047ab958045033c4a505b9b0c000"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#a7161047ab958045033c4a505b9b0c000">verify_args</a></div><div class="ttdeci">bool verify_args(int total_args, char *argument)</div><div class="ttdoc">This function is used to verify wanted argument count and argument.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00078">sub64.c:78</a></div></div>
+<div class="ttc" id="asub64_8c_html_a72ead14d38a5895538633016d551be6a"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#a72ead14d38a5895538633016d551be6a">two_arg_commands</a></div><div class="ttdeci">char * two_arg_commands[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00044">sub64.c:44</a></div></div>
+<div class="ttc" id="asub64_8c_html_ad80963821f2c4b0426f18e94abe198f6"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#ad80963821f2c4b0426f18e94abe198f6">sub64_one_command</a></div><div class="ttdeci">struct one_command sub64_one_command</div></div>
+<div class="ttc" id="asub64_8c_html_ad89d6df7a7ddb0c57e098be8ae179f51"><div class="ttname"><a href="../../d7/d57/sub64_8c.html#ad89d6df7a7ddb0c57e098be8ae179f51">one_arg_commands</a></div><div class="ttdeci">char * one_arg_commands[]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d57/sub64_8c_source.html#l00045">sub64.c:45</a></div></div>
+<div class="ttc" id="asub64__menus_8h_html_a15db41dd614eff946c632b69148715c4"><div class="ttname"><a href="../../d1/d72/sub64__menus_8h.html#a15db41dd614eff946c632b69148715c4">version_menu</a></div><div class="ttdeci">void version_menu()</div><div class="ttdoc">This function shows the version of sub64.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da7/version__menu_8c_source.html#l00016">version_menu.c:16</a></div></div>
+<div class="ttc" id="asub64__msg_8h_html_a0f8b73749265af82f1ffe78ecfc98e96"><div class="ttname"><a href="../../d2/d3f/sub64__msg_8h.html#a0f8b73749265af82f1ffe78ecfc98e96">vall_err_msg</a></div><div class="ttdeci">void vall_err_msg(char *option)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dbb/val__err__msg_8c_source.html#l00013">val_err_msg.c:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

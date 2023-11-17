@@ -1,0 +1,17 @@
+digraph "src/menus/sub64_menus.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/menus/sub64_menus.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This header file is used manage the sub64 menu system."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/app/sub64.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d57/sub64_8c.html",tooltip="This file is the main application file, provides command option check and validity."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/menus/docs_menu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dbd/docs__menu_8c.html",tooltip="This file is used to show docs URL."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/menus/github_menu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d40/github__menu_8c.html",tooltip="This file is used to show project github URL, current issues to the user."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/menus/help_menu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d04/help__menu_8c.html",tooltip="This file is used to show general information about sub64."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/menus/version_menu.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/da7/version__menu_8c.html",tooltip="This file is used to show version info of sub64."];
+}
