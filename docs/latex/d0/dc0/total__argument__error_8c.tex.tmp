@@ -1,0 +1,52 @@
+\hypertarget{total__argument__error_8c}{}\doxysection{src/msg/total\+\_\+argument\+\_\+error.c File Reference}
+\label{total__argument__error_8c}\index{src/msg/total\_argument\_error.c@{src/msg/total\_argument\_error.c}}
+
+
+This file and function is used to give information when user entered more or less arguments executing the program.  
+
+
+{\ttfamily \#include \char`\"{}sub64\+\_\+msg.\+h\char`\"{}}\newline
+Include dependency graph for total\+\_\+argument\+\_\+error.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{total__argument__error_8c_ae81d0a12b876eacbed64dd3957b25338}{total\+\_\+argument\+\_\+error}} (int total\+\_\+arguments)
+\begin{DoxyCompactList}\small\item\em This function is used to give information when user entered more or less arguments executing the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file and function is used to give information when user entered more or less arguments executing the program. 
+
+\begin{DoxyAuthor}{Author}
+Mehmet Mert Gunduz
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16/11/2023 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{total__argument__error_8c_source}{total\+\_\+argument\+\_\+error.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{total__argument__error_8c_ae81d0a12b876eacbed64dd3957b25338}\label{total__argument__error_8c_ae81d0a12b876eacbed64dd3957b25338}} 
+\index{total\_argument\_error.c@{total\_argument\_error.c}!total\_argument\_error@{total\_argument\_error}}
+\index{total\_argument\_error@{total\_argument\_error}!total\_argument\_error.c@{total\_argument\_error.c}}
+\doxysubsubsection{\texorpdfstring{total\_argument\_error()}{total\_argument\_error()}}
+{\footnotesize\ttfamily void total\+\_\+argument\+\_\+error (\begin{DoxyParamCaption}\item[{int}]{total\+\_\+arguments }\end{DoxyParamCaption})}
+
+
+
+This function is used to give information when user entered more or less arguments executing the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+\_\+arguments} & The total arguments/options prompted by the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{total__argument__error_8c_source_l00018}{18}} of file \mbox{\hyperlink{total__argument__error_8c_source}{total\+\_\+argument\+\_\+error.\+c}}.
+

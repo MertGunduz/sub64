@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['argverify_48',['argVerify',['../d1/d2a/argVerify_8c.html#accd7a277a011046979c4c497d64e40ee',1,'argVerify(int argc, char *firstArgument):&#160;argVerify.c'],['../d5/d44/praiselanglib_8h.html#accd7a277a011046979c4c497d64e40ee',1,'argVerify(int argc, char *firstArgument):&#160;argVerify.c']]]
+  ['base64_5fdecode_0',['base64_decode',['../db/d36/base64_8c.html#a83f7365633f396a13b8b2346afd75115',1,'base64_decode(const char *in, unsigned int inlen, unsigned char *out):&#160;base64.c'],['../d2/d6f/base64_8h.html#a83f7365633f396a13b8b2346afd75115',1,'base64_decode(const char *in, unsigned int inlen, unsigned char *out):&#160;base64.c']]],
+  ['base64_5fencode_1',['base64_encode',['../db/d36/base64_8c.html#a514f4adba027ad85f3e072c03ced130e',1,'base64_encode(const unsigned char *in, unsigned int inlen, char *out):&#160;base64.c'],['../d2/d6f/base64_8h.html#a514f4adba027ad85f3e072c03ced130e',1,'base64_encode(const unsigned char *in, unsigned int inlen, char *out):&#160;base64.c']]]
 ];

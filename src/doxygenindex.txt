@@ -1,8 +1,8 @@
-/*! \mainpage praiselang (wordbook)
+/*! \mainpage sub64
  *
  * \section intro_sec Introduction
  * <hr>
- * praiselang is a lightweight encryption/decryption algorithm that uses Base64 and praiselang substitution algorithm together.
+ * sub64 is a lightweight encryption/decryption algorithm that uses Base64 and sub64 substitution algorithm together.
  *
  * youtube: https://www.youtube.com/watch?v=0gjHvFUlF_8
  *
@@ -18,7 +18,7 @@
  *
  * \section dependency_sec Dependencies
  * <hr>
- * CMake (MIN 3.22)
+ * CMake (MIN 3.15)
  *
  * \n
  *
@@ -26,7 +26,7 @@
  * <hr>
  * \subsection step1 Step 1: Download the Source codes
  *
- * https://github.com/MertGunduz/praiselang
+ * https://github.com/MertGunduz/sub64
  *
  * \n
  *

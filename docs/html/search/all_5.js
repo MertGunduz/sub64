@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['helpmenu_18',['helpMenu',['../d6/d4d/helpMenu_8c.html#ac711f79a35ebd31f89aebf9ef213d904',1,'helpMenu():&#160;helpMenu.c'],['../d5/d44/praiselanglib_8h.html#ac711f79a35ebd31f89aebf9ef213d904',1,'helpMenu():&#160;helpMenu.c']]],
-  ['helpmenu_2ec_19',['helpMenu.c',['../d6/d4d/helpMenu_8c.html',1,'']]]
+  ['total_5fargument_5ferror_0',['total_argument_error',['../d0/dc0/total__argument__error_8c.html#ae81d0a12b876eacbed64dd3957b25338',1,'total_argument_error.c']]],
+  ['total_5fargument_5ferror_2ec_1',['total_argument_error.c',['../d0/dc0/total__argument__error_8c.html',1,'']]]
 ];

@@ -1,0 +1,31 @@
+\hypertarget{base64_8h_source}{}\doxysection{base64.\+h}
+\label{base64_8h_source}\index{src/base64/base64.h@{src/base64/base64.h}}
+\mbox{\hyperlink{base64_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00012}00012 \textcolor{preprocessor}{\#ifndef BASE64\_H}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00013}00013 \textcolor{preprocessor}{\#define BASE64\_H}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00015}\mbox{\hyperlink{base64_8h_abe0e111fab15cc824b9f49324dfa4d8f}{00015}} \textcolor{preprocessor}{\#define BASE64\_ENCODE\_OUT\_SIZE(s) ((unsigned int)((((s) + 2) / 3) * 4 + 1))}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00016}\mbox{\hyperlink{base64_8h_ad92de9c7638bdc487add29c096a637d6}{00016}} \textcolor{preprocessor}{\#define BASE64\_DECODE\_OUT\_SIZE(s) ((unsigned int)(((s) / 4) * 3))}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00018}00018 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00019}00019 \textcolor{comment}{ * out is null-\/terminated encode string.}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00020}00020 \textcolor{comment}{ * return values is out length, exclusive terminating `\(\backslash\)0'}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00021}00021 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00022}00022 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{base64_8h_a514f4adba027ad85f3e072c03ced130e}{base64\_encode}}(\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *in, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} inlen, \textcolor{keywordtype}{char} *out);}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00024}00024 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00025}00025 \textcolor{comment}{ * return values is out length}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00026}00026 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00027}00027 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{base64_8h_a83f7365633f396a13b8b2346afd75115}{base64\_decode}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *in, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} inlen, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *out);}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00029}00029 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* BASE64\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00031}00031 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00032}00032 \textcolor{comment}{* code is taken from Wei Zhicheng's base64 repository}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00033}00033 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00034}00034 \textcolor{comment}{* repository URL: https://github.com/zhicheng/base64}}
+\DoxyCodeLine{\Hypertarget{base64_8h_source_l00035}00035 \textcolor{comment}{*/}}
+
+\end{DoxyCode}

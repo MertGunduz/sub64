@@ -1,3 +1,4 @@
 add_subdirectory(base64)
-add_subdirectory(praiselanglib)
+add_subdirectory(msg)
+add_subdirectory(crypto)
 add_subdirectory(app)

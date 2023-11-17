@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "praiselanglib.h": "c"
-    }
+    },
+    "cmake.configureOnOpen": false
 }

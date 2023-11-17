@@ -1,9 +1,9 @@
-add_executable(praiselang praiselang.c)
+add_executable(sub64 sub64.c)
 
-target_link_libraries(praiselang praiselanglib base64)
+# target_link_libraries(sub64)
 
 # INSTALL THE EXECUTABLE TO USR/BIN
 install(
-    TARGETS praiselang
+    TARGETS sub64
     DESTINATION /usr/local/bin/
 )
