@@ -31,88 +31,92 @@
 \DoxyCodeLine{\Hypertarget{sub64_8c_source_l00036}00036     \{\textcolor{stringliteral}{"{}-\/-\/docs"{}}, \mbox{\hyperlink{docs__menu_8c_acf63399322b7b3d545c1f568b0460667}{docs\_menu}}\}}
 \DoxyCodeLine{\Hypertarget{sub64_8c_source_l00037}00037 \};}
 \DoxyCodeLine{\Hypertarget{sub64_8c_source_l00038}00038 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00039}00039 \textcolor{keyword}{static} \mbox{\hyperlink{structtwo__command}{sub64\_two\_command}} two\_arg\_structs[] = }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00040}00040 \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00041}00041     \{\textcolor{stringliteral}{"{}-\/-\/gen-\/key"{}}\}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00042}00042 \};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00043}00043 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00044}\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{00044}} \textcolor{keywordtype}{char} *\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[] = \{\textcolor{stringliteral}{"{}-\/-\/encrypt"{}}, \textcolor{stringliteral}{"{}-\/-\/decrypt"{}}, \textcolor{stringliteral}{"{}-\/-\/gen-\/key"{}}, \textcolor{stringliteral}{"{}-\/-\/import-\/key"{}}\};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00045}\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{00045}} \textcolor{keywordtype}{char} *\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[] = \{\textcolor{stringliteral}{"{}-\/-\/export-\/key"{}}, \textcolor{stringliteral}{"{}-\/-\/help"{}}, \textcolor{stringliteral}{"{}-\/-\/github"{}}, \textcolor{stringliteral}{"{}-\/-\/version"{}}, \textcolor{stringliteral}{"{}-\/-\/docs"{}}\};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00046}00046 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00047}\mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{00047}} \textcolor{keywordtype}{int} \mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00048}00048 \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00049}00049     \textcolor{keywordflow}{if} (\mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{verify\_args}}(argc, argv[1]))}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00050}00050     \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00051}00051         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(one\_arg\_structs) / \textcolor{keyword}{sizeof}(one\_arg\_structs[0]); i++)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00052}00052         \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00053}00053             \textcolor{keywordflow}{if} (strcmp(argv[1], one\_arg\_structs[i].command\_text) == 0)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00054}00054             \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00055}00055                 one\_arg\_structs[i].\mbox{\hyperlink{structone__command_af9e0e826beb93f988a01c056a50e3962}{func}}();}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00056}00056             \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00057}00057         \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00058}00058 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00059}00059         \textcolor{comment}{/*for (size\_t i = 0; i < sizeof(two\_arg\_structs) / sizeof(two\_arg\_structs[0]); i++)}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00060}00060 \textcolor{comment}{        \{}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00061}00061 \textcolor{comment}{            if (strcmp(argv[1], two\_arg\_structs[i].command\_text) == 0)}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00062}00062 \textcolor{comment}{            \{}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00063}00063 \textcolor{comment}{                two\_arg\_structs[i].func(argv[2]);}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00064}00064 \textcolor{comment}{            \}}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00065}00065 \textcolor{comment}{        \}*/}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00066}00066     \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00067}00067 \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00068}00068 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00078}\mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{00078}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{verify\_args}}(\textcolor{keywordtype}{int} total\_args, \textcolor{keywordtype}{char} *argument)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00079}00079 \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00080}00080     \textcolor{keywordflow}{if} (total\_args == 2)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00081}00081     \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00082}00082         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[0]); i++)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00083}00083         \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00084}00084             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[i], argument) == 0)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00085}00085             \{                }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00086}00086                 \textcolor{keywordflow}{return} \textcolor{keyword}{true}; }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00087}00087             \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00088}00088         \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00089}00089 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00090}00090         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[0]); i++)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00091}00091         \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00092}00092             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[i], argument) == 0)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00093}00093             \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00094}00094                 \mbox{\hyperlink{sub64__msg_8h_a0f8b73749265af82f1ffe78ecfc98e96}{vall\_err\_msg}}(argument);}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00095}00095                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00096}00096             \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00097}00097         \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00098}00098 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00099}00099         \mbox{\hyperlink{not__valid__arg_8c_a8fdd722924bfb1068a3bb68d037d03c8}{not\_valid\_arg}}(argument);}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00100}00100         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00101}00101     \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00102}00102     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (total\_args == 3)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00103}00103     \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00104}00104         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[0]); i++)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00105}00105         \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00106}00106             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[i], argument) == 0)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00107}00107             \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00108}00108                 \mbox{\hyperlink{one__arg__err__msg_8c_a2ac4e4596098672a9105ba5e27f2b071}{one\_arg\_err\_msg}}(argument);}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00109}00109                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00110}00110             \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00111}00111         \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00112}00112 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00113}00113         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[0]); i++)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00114}00114         \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00115}00115             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[i], argument) == 0)}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00116}00116             \{                }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00117}00117                 \textcolor{keywordflow}{return} \textcolor{keyword}{true}; }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00118}00118             \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00119}00119         \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00120}00120 }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00121}00121         \mbox{\hyperlink{not__valid__arg_8c_a8fdd722924bfb1068a3bb68d037d03c8}{not\_valid\_arg}}(argument);}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00122}00122         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00123}00123     \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00124}00124     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00125}00125     \{}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00126}00126         \mbox{\hyperlink{argc__err__msg_8c_a2177be51f7cf180bd995417575018010}{argc\_err\_msg}}();}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00039}00039 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00040}00040 \textcolor{comment}{static sub64\_two\_command two\_arg\_structs[] = }}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00041}00041 \textcolor{comment}{\{}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00042}00042 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00043}00043 \textcolor{comment}{\};}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00044}00044 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00046}\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{00046}} \textcolor{keywordtype}{char} *\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[] = \{\textcolor{stringliteral}{"{}-\/-\/encrypt"{}}, \textcolor{stringliteral}{"{}-\/-\/decrypt"{}}, \textcolor{stringliteral}{"{}-\/-\/import-\/key"{}}\};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00047}\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{00047}} \textcolor{keywordtype}{char} *\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[] = \{\textcolor{stringliteral}{"{}-\/-\/export-\/key"{}}, \textcolor{stringliteral}{"{}-\/-\/help"{}}, \textcolor{stringliteral}{"{}-\/-\/github"{}}, \textcolor{stringliteral}{"{}-\/-\/version"{}}, \textcolor{stringliteral}{"{}-\/-\/docs"{}}\};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00049}\mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{00049}} \textcolor{keywordtype}{int} \mbox{\hyperlink{sub64_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00051}00051     \textcolor{keywordflow}{if} (\mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{verify\_args}}(argc, argv[1]))}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00052}00052     \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00053}00053         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(one\_arg\_structs) / \textcolor{keyword}{sizeof}(one\_arg\_structs[0]); i++)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00054}00054         \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00055}00055             \textcolor{keywordflow}{if} (strcmp(argv[1], one\_arg\_structs[i].command\_text) == 0)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00056}00056             \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00057}00057                 one\_arg\_structs[i].\mbox{\hyperlink{structone__command_af9e0e826beb93f988a01c056a50e3962}{func}}();}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00058}00058             \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00059}00059         \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00061}00061         \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00062}00062 \textcolor{comment}{        for (size\_t i = 0; i < sizeof(two\_arg\_structs) / sizeof(two\_arg\_structs[0]); i++)}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00063}00063 \textcolor{comment}{        \{}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00064}00064 \textcolor{comment}{            if (strcmp(argv[1], two\_arg\_structs[i].command\_text) == 0)}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00065}00065 \textcolor{comment}{            \{}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00066}00066 \textcolor{comment}{                two\_arg\_structs[i].func(argv[2]);}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00067}00067 \textcolor{comment}{            \}}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00068}00068 \textcolor{comment}{        \}}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00069}00069 \textcolor{comment}{        */}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00082}\mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{00082}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{sub64_8c_a7161047ab958045033c4a505b9b0c000}{verify\_args}}(\textcolor{keywordtype}{int} total\_args, \textcolor{keywordtype}{char} *argument)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00083}00083 \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00084}00084     \textcolor{keywordflow}{if} (total\_args == 2)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00085}00085     \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00086}00086         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[0]); i++)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00087}00087         \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00088}00088             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[i], argument) == 0)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00089}00089             \{                }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00090}00090                 \textcolor{keywordflow}{return} \textcolor{keyword}{true}; }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00091}00091             \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00092}00092         \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00094}00094         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[0]); i++)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00095}00095         \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00096}00096             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[i], argument) == 0)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00097}00097             \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00098}00098                 \mbox{\hyperlink{sub64__msg_8h_a0f8b73749265af82f1ffe78ecfc98e96}{vall\_err\_msg}}(argument);}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00099}00099                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00100}00100             \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00101}00101         \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00103}00103         \mbox{\hyperlink{not__valid__arg_8c_a8fdd722924bfb1068a3bb68d037d03c8}{not\_valid\_arg}}(argument);}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00104}00104         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00106}00106     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (total\_args == 3)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00107}00107     \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00108}00108         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[0]); i++)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00109}00109         \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00110}00110             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_ad89d6df7a7ddb0c57e098be8ae179f51}{one\_arg\_commands}}[i], argument) == 0)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00111}00111             \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00112}00112                 \mbox{\hyperlink{one__arg__err__msg_8c_a2ac4e4596098672a9105ba5e27f2b071}{one\_arg\_err\_msg}}(argument);}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00113}00113                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00114}00114             \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00115}00115         \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00117}00117         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[0]); i++)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00118}00118         \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00119}00119             \textcolor{keywordflow}{if} (strcmp(\mbox{\hyperlink{sub64_8c_a72ead14d38a5895538633016d551be6a}{two\_arg\_commands}}[i], argument) == 0)}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00120}00120             \{                }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00121}00121                 \textcolor{keywordflow}{return} \textcolor{keyword}{true}; }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00122}00122             \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00123}00123         \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00125}00125         \mbox{\hyperlink{not__valid__arg_8c_a8fdd722924bfb1068a3bb68d037d03c8}{not\_valid\_arg}}(argument);}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00126}00126         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
 \DoxyCodeLine{\Hypertarget{sub64_8c_source_l00127}00127     \}}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00128}00128     }
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00129}00129     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00130}00130 \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00128}00128     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00129}00129     \{}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00130}00130         \mbox{\hyperlink{argc__err__msg_8c_a2177be51f7cf180bd995417575018010}{argc\_err\_msg}}();}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00131}00131     \}}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00132}00132     }
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00133}00133     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{sub64_8c_source_l00134}00134 \}}
 
 \end{DoxyCode}
