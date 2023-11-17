@@ -32,7 +32,8 @@ static sub64_one_command one_arg_structs[] =
 {
     {"--help", help_menu},
     {"--version", version_menu},
-    {"--github", github_menu}
+    {"--github", github_menu},
+    {"--docs", docs_menu}
 };
 
 /*
@@ -42,8 +43,8 @@ static sub64_two_command two_arg_structs[] =
 };
 */
 
-char *two_arg_commands[] = {"--encrypt", "--decrypt", "--generate-key"};
-char *one_arg_commands[] = {"--export-key", "--import-key", "--help", "--website", "--github", "--version", "--config"};
+char *two_arg_commands[] = {"--encrypt", "--decrypt", "--generate-key", "--import-key"};
+char *one_arg_commands[] = {"--export-key", "--help", "--github", "--version", "--docs"};
 
 int main(int argc, char *argv[])
 {

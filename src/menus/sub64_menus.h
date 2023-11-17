@@ -17,5 +17,6 @@
 void help_menu();
 void version_menu();
 void github_menu();
+void docs_menu();
 
 #endif /* SUB64_MENUS_H */
