@@ -1,0 +1,50 @@
+\hypertarget{export__data_8c_source}{}\doxysection{export\+\_\+data.\+c}
+\label{export__data_8c_source}\index{src/appdata/export\_data.c@{src/appdata/export\_data.c}}
+\mbox{\hyperlink{export__data_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{sub64__appdata_8h}{sub64\_appdata.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00013}\mbox{\hyperlink{export__data_8c_af783caa0ab3eaa291b0af58fcb59d2b3}{00013}} \textcolor{preprocessor}{\#define FILE\_PATH 256}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00018}\mbox{\hyperlink{export__data_8c_a263efd24d550124313df51247f07457a}{00018}} \textcolor{preprocessor}{\#define MAX\_FILE\_PATH 256}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00019}\mbox{\hyperlink{export__data_8c_ad4d796b98c583d49e83adabd74a63bf6}{00019}} \textcolor{preprocessor}{\#define MAX\_BUFFER\_SIZE 512}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00021}00021 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{sub64__appdata_8h}{sub64\_appdata.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00026}\mbox{\hyperlink{export__data_8c_a514730b3031400363fe5f2e8b9eaf48e}{00026}} \textcolor{keywordtype}{void} \mbox{\hyperlink{export__data_8c_a514730b3031400363fe5f2e8b9eaf48e}{export\_data}}()}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00028}00028     \textcolor{keywordtype}{char} file\_path[\mbox{\hyperlink{export__data_8c_a263efd24d550124313df51247f07457a}{MAX\_FILE\_PATH}}];}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00030}00030     \textcolor{comment}{/* Get the home directory of the current user. */}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00031}00031     \textcolor{keywordtype}{char} *home\_directory = getenv(\textcolor{stringliteral}{"{}HOME"{}});}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00033}00033     \textcolor{keywordflow}{if} (home\_directory == NULL) }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00034}00034     \{}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00035}00035         \textcolor{comment}{//msg}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00036}00036         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00039}00039     \textcolor{comment}{/* Create the file path. */}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00040}00040     sprintf(file\_path, \textcolor{stringliteral}{"{}\%s/.sub64/sub64\_data.txt"{}}, home\_directory);}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00042}00042     FILE *config\_file = fopen(file\_path, \textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00044}00044     \textcolor{keywordflow}{if} (config\_file == NULL)}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00045}00045     \{}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00046}00046         \textcolor{comment}{//msg}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00047}00047         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00050}00050     \textcolor{keywordtype}{char} buffer[\mbox{\hyperlink{export__data_8c_ad4d796b98c583d49e83adabd74a63bf6}{MAX\_BUFFER\_SIZE}}];}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00052}00052     \textcolor{comment}{/* Read and print each line of the file. */}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00053}00053     \textcolor{keywordflow}{while} (fgets(buffer, \mbox{\hyperlink{export__data_8c_ad4d796b98c583d49e83adabd74a63bf6}{MAX\_BUFFER\_SIZE}}, config\_file) != NULL)}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00054}00054     \{}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00055}00055         fprintf(stdout, \textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}}, buffer);}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00058}00058     fclose(config\_file);}
+\DoxyCodeLine{\Hypertarget{export__data_8c_source_l00059}00059 \}}
+
+\end{DoxyCode}

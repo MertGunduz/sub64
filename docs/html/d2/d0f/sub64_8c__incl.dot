@@ -17,7 +17,12 @@ digraph "src/app/sub64.c"
   Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="string.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="../menus/sub64_menus.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d72/sub64__menus_8h.html",tooltip="This header file is used manage the sub64 menu system."];
+  Node8 [label="../menus/sub64_menus.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d72/sub64__menus_8h.html",tooltip="This header file is used manage the sub64 appdata import/export system."];
   Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="../appdata/sub64_appdata.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d42/sub64__appdata_8h.html",tooltip=" "];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }
