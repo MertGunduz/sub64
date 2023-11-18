@@ -16,7 +16,7 @@
 void help_menu()
 {
     fprintf(stdout, "usage: sub64 [OPTION]\n");
-    fprintf(stdout, "encrypt/decrypt text or files via base64/random substitution\n\n");
+    fprintf(stdout, "encrypt/decrypt text or files via base64 and editable words\n\n");
 
     fprintf(stdout, "sub64 encrypt/decrypt\n");
     fprintf(stdout, "---------------------\n");
