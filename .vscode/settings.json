@@ -2,7 +2,8 @@
     "files.associations": {
         "praiselanglib.h": "c",
         "sub64_msg.h": "c",
-        "sub64_menus.h": "c"
+        "sub64_menus.h": "c",
+        "sub64_appdata.h": "c"
     },
     "cmake.configureOnOpen": false
 }

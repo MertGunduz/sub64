@@ -13,6 +13,7 @@
 
 #include "../msg/sub64_msg.h"
 #include "../menus/sub64_menus.h"
+#include "../appdata/sub64_appdata.h"
 
 bool verify_args(int total_args, char *argument);
 
@@ -33,7 +34,8 @@ static sub64_one_command one_arg_structs[] =
     {"--help", help_menu},
     {"--version", version_menu},
     {"--github", github_menu},
-    {"--docs", docs_menu}
+    {"--docs", docs_menu},
+    {"--export-data", export_data}
 };
 
 /*

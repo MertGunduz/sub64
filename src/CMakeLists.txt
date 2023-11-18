@@ -1,5 +1,5 @@
 add_subdirectory(base64)
 add_subdirectory(msg)
-add_subdirectory(crypto)
+add_subdirectory(appdata)
 add_subdirectory(menus)
 add_subdirectory(app)

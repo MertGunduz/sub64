@@ -1,6 +1,6 @@
 add_executable(sub64 sub64.c)
 
-target_link_libraries(sub64 sub64_msg sub64_menus)
+target_link_libraries(sub64 sub64_msg sub64_menus sub64_appdata)
 
 # CREATE DIRECTORY
 set(dest_path "$ENV{HOME}/.sub64")
