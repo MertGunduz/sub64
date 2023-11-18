@@ -23,12 +23,15 @@ void help_menu()
     fprintf(stdout, "--encrypt \"[TEXT]\"  encrypts the given text\n");
     fprintf(stdout, "--decrypt \"[TEXT]\"  decrypts the given text\n\n");
 
-    fprintf(stdout, "sub64 key generation\n");
-    fprintf(stdout, "--gen-key \"[SEED]\"   generates a key by using seed\n\n");
+    fprintf(stdout, "sub64 data import/export\n");
+    fprintf(stdout, "------------------------\n");
+    fprintf(stdout, "--import \"[DATA]\"   imports the data\n");
+    fprintf(stdout, "--export            exports the data\n\n");
 
     fprintf(stdout, "yiffy information menu arguments\n");
-    fprintf(stdout, "--help                outputs the help menu\n"); 
-    fprintf(stdout, "--version             outputs the version menu\n");
-    fprintf(stdout, "--github              outputs the github menu\n");
-    fprintf(stdout, "--docs                outputs the website menu\n\n");
+    fprintf(stdout, "--------------------------------\n");
+    fprintf(stdout, "--help              outputs the help menu\n"); 
+    fprintf(stdout, "--version           outputs the version menu\n");
+    fprintf(stdout, "--github            outputs the github menu\n");
+    fprintf(stdout, "--docs              outputs the website menu\n\n");
 }
