@@ -43,8 +43,8 @@ static sub64_two_command two_arg_structs[] =
 };
 */
 
-char *two_arg_commands[] = {"--encrypt", "--decrypt", "--import-key"};
-char *one_arg_commands[] = {"--export-key", "--help", "--github", "--version", "--docs"};
+char *two_arg_commands[] = {"--encrypt", "--decrypt", "--import-data"};
+char *one_arg_commands[] = {"--export-data", "--help", "--github", "--version", "--docs"};
 
 int main(int argc, char *argv[])
 {
